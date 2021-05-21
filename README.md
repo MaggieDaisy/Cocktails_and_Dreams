@@ -137,22 +137,21 @@ The selection of images has been made to present specific cocktails. Image prese
 * **HTML - HTML5 technology** – was used as the main language to create the structure of the Website.
 * **CSS - CSS3 technology** – was used as the main language to style the Website.
 * **JS - JavaScript technology** – was used as the main language to create the interactive elements of the Website.
-* **Python technology** - an interpreted high-level general-purpose back end programming language
+* **Python technology** - was used as an interpreted high-level general-purpose back end programming language
 * [**Flask**](https://www.fullstackpython.com/flask.html) - a lightweight WSGI web application framework
 * [**Jinja**](https://jinja.palletsprojects.com/en/3.0.x/) - a web template engine for the Python programming language
 * [**MongoDB Atlas Database**](https://www.mongodb.com/cloud/atlas1)- was used as a source-available cross-platform document-oriented database program for storing information 
 * [**Materialize**](https://materializecss.com/) - Materialize front-end framework was used as an open-source to create responsive features and modern design of the Website.
 * [**jQuery**](https://jquery.com/) - jQuery library was used as an open-source to create interactive features.
 * [**Font Awesome**](https://fontawesome.com/) - Font Awesome Icons were used for social media links and marking separate parts of sections.
-* [**Google Fonts**](https://fonts.google.com/specimen/Inconsolata) - Google Font used throughout this project was 'Inconsolata'.
+* [**Google Fonts**](https://fonts.google.com/specimen/Inconsolata) - Google Font used throughout this project
 * [**Gitpod**](https://www.gitpod.io/) - Integrated Development Environment was used to develop the Website.
 * [**GitHub**](https://github.com/) - GitHub hosting site was used to store the source code for the Website, and Git Pages was used for the deployment of the live version of site.
 * [**Git**](https://git-scm.com/) - Git was used as version control software to commit and push code to the GitHub repository where the source code is stored.
 * [**Heroku**](https://www.heroku.com) - Cloud Application Platform is a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud
-* [**EmailJS**](https://www.emailjs.com/) - was used to send an email to the site of the agency right after submission of the contact form.
 * [**Stack Overflow**](https://stackoverflow.com/) - was used as a general source of knowledge.
 * [**w3schools**](https://www.w3schools.com/howto/default.asp) - especially section 'How to' was used as a general source of knowledge.
-* [**Google Chrome Developer Tools**](https://developers.google.com/web/tools/chrome-devtools) - this built-in developer tool was used to inspect page elements and help debug issues with the site layout and test different CSS styles and console JS.
+* [**Google Chrome Developer Tools**](https://developers.google.com/web/tools/chrome-devtools) - this built-in developer tool was used to inspect page elements and help debug issues with the site layout and test different styles
 * [**Mobile-Friendly Test Tool**](https://search.google.com/test/mobile-friendly) - The Mobile-Friendly test tool was used to check if aplication is designed for mobile devices.
 * [**Balsamiq Wireframe**](https://balsamiq.com/wireframes/) - these quick and handful tool was used to create wireframes for planning project structure and layout.
 * [**Am I Responsive Bookmarklet**](http://ami.responsivedesign.is/) - Multi Device Website Mockup Generator was used to create the Mockup image for this README file.
@@ -162,7 +161,7 @@ The selection of images has been made to present specific cocktails. Image prese
 * [**JSHint**](https://jshint.com/) - was used as tool that helps to detect errors and potential problems in JavaScript code.
 * [**Closing Tag Checker for HTML5**](https://www.aliciaramirez.com/closing-tags-checker/) - was used to validate if all tags are open and close correctly.
 * [**HTML and CSS and JS Formatter**](https://webformatter.com/html) - was used to beautify code.
-* [**MS2 Lead Call**](http://bit.ly/ms2_call_aukje) - Zoom session about planning Milestone Project 2, recorded and posted on Slack by Aukje van der Val  - was used to structure planning steps for this project.
+* [**MS3 Strategy and Tips**](https://us02web.zoom.us/rec/play/Oue_1UJem3uxbPmzdT40ysKMOh4urdHf2M7ABy0zoHTGubzwWXedDZ31n1HOF0WwVNwYg34X_qrKcfiQ.FiJ8qeUidncmPnYi) - Zoom session about planning Milestone Project 3, recorded and posted on Zoom by Ed Bradley was used to structure planning steps for this project.
 * [**Grammarly**](https://app.grammarly.com/) - a comprehensive writing tool was used as a helper to write clear and correct text.
 * [**iColorpalette**](https://icolorpalette.com/) - has been used as a color picker to create a layout on the Website.
 * [**GIMP**](https://www.gimp.org/) - GNU Image Manipulation Program (GIMP) has been used as free & open source image editor
