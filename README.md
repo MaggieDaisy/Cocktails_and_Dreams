@@ -20,7 +20,7 @@ This project was created to demonstrate the acquisition of broader coding skills
 
 # Cocktails and Dreams
 
-[**View the live project here**](https://maggiedaisy.github.io/Cocktails-and-Dreams/)
+[**View the live project here**](https://cocktails-and-dreams-m.herokuapp.com/)
 
 Cocktails&Dreams is a full-stack application that allows users to manage a dataset about this domain. The purpose of this app is to demonstrate basic cocktails' classic recipes, add new dream recipes, and search for existing ones by name or ingredient. This app can benefit cocktails enthusiasts who like to experiment with mixing ingredients and professional bartenders who can provide officially approved pieces of information. The website offers the possibility to users to share their data with the community and benefit from having convenient access to the data provided by all the members. This website is designed in such a way that the user can check it at any time, on the phone on the road, or at home on the computer. The project may be expanded in the future with other, more detailed sections.
 
@@ -111,10 +111,16 @@ pink
 black
 flashy yellow and green 
 
-Typography
-> Font '' was used for the clean and transparent experience for the whole body content. Selected from google fonts after recommendations other users that this specific font is good for clear readability and professional layout of the recipe project
+> Typography
+
+Font '' was used for the clean and transparent experience for the whole body content. Selected from google fonts after recommendations other users that this specific font is good for clear readability and professional layout of the recipe project
+
 > Icons 
+
+
 > Images
+
+
 The selection of images has been made to present specific cocktails. Image presentation shows to users theme of the website 
 
 
@@ -131,8 +137,10 @@ The selection of images has been made to present specific cocktails. Image prese
 * **HTML - HTML5 technology** – was used as the main language to create the structure of the Website.
 * **CSS - CSS3 technology** – was used as the main language to style the Website.
 * **JS - JavaScript technology** – was used as the main language to create the interactive elements of the Website.
-* **Python+Flask technology** - 
-* **MongoDB** - was used as a source-available cross-platform document-oriented database program for storing information 
+* **Python technology** - an interpreted high-level general-purpose back end programming language
+* [**Flask**](https://www.fullstackpython.com/flask.html) - a lightweight WSGI web application framework
+* [**Jinja**](https://jinja.palletsprojects.com/en/3.0.x/) - a web template engine for the Python programming language
+* [**MongoDB Atlas Database**](https://www.mongodb.com/cloud/atlas1)- was used as a source-available cross-platform document-oriented database program for storing information 
 * [**Materialize**](https://materializecss.com/) - Materialize front-end framework was used as an open-source to create responsive features and modern design of the Website.
 * [**jQuery**](https://jquery.com/) - jQuery library was used as an open-source to create interactive features.
 * [**Font Awesome**](https://fontawesome.com/) - Font Awesome Icons were used for social media links and marking separate parts of sections.
@@ -140,7 +148,7 @@ The selection of images has been made to present specific cocktails. Image prese
 * [**Gitpod**](https://www.gitpod.io/) - Integrated Development Environment was used to develop the Website.
 * [**GitHub**](https://github.com/) - GitHub hosting site was used to store the source code for the Website, and Git Pages was used for the deployment of the live version of site.
 * [**Git**](https://git-scm.com/) - Git was used as version control software to commit and push code to the GitHub repository where the source code is stored.
-* [**Google Maps JavaScript API**](https://developers.google.com/maps) - was used to display a map on the page with markers for main attractions.
+* [**Heroku**](https://www.heroku.com) - Cloud Application Platform is a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud
 * [**EmailJS**](https://www.emailjs.com/) - was used to send an email to the site of the agency right after submission of the contact form.
 * [**Stack Overflow**](https://stackoverflow.com/) - was used as a general source of knowledge.
 * [**w3schools**](https://www.w3schools.com/howto/default.asp) - especially section 'How to' was used as a general source of knowledge.
@@ -155,10 +163,9 @@ The selection of images has been made to present specific cocktails. Image prese
 * [**Closing Tag Checker for HTML5**](https://www.aliciaramirez.com/closing-tags-checker/) - was used to validate if all tags are open and close correctly.
 * [**HTML and CSS and JS Formatter**](https://webformatter.com/html) - was used to beautify code.
 * [**MS2 Lead Call**](http://bit.ly/ms2_call_aukje) - Zoom session about planning Milestone Project 2, recorded and posted on Slack by Aukje van der Val  - was used to structure planning steps for this project.
-* [**Bootstrap Essentials**](https://ajgreaves.github.io/bootstrap-grid-demo/index.html) - Page developed by Anna Greaves - was used as a source for a better understanding of the grid system.
 * [**Grammarly**](https://app.grammarly.com/) - a comprehensive writing tool was used as a helper to write clear and correct text.
 * [**iColorpalette**](https://icolorpalette.com/) - has been used as a color picker to create a layout on the Website.
-* [**GIMP**](https://www.gimp.org/) - GNU Image Manipulation Program (GIMP) has been used as free & open source image editor to create a logo of the Web.
+* [**GIMP**](https://www.gimp.org/) - GNU Image Manipulation Program (GIMP) has been used as free & open source image editor
 * **Microsoft Paint** - a simple raster graphics editor has been used for editing and resizing pictures.
 * [**FaviconeCodeGenerator**](https://www.faviconcodegenerator.com/) - Favicon Code Generator is Free Online Favicon Converter and has been used to create a little graphic image (icon) associated with a webpage.
 * [**MDN Web Docs**](https://developer.mozilla.org/) - documentation repository and learning resource for web developers has been used as a general resource.
@@ -176,10 +183,77 @@ The final result of this project is a full-stack, front-end and back-en
 
 # 7. Version Control
 
-**Git** - free and open-source distributed **Version Control System** was used to show tracking all changes during the coding process. 
-`Git add -A`, `Git commit -m`, `Git push` commands were used to approve and store files in the repository. 
+**Git** - free and open source distributed **Version Control System** was used to show tracking all changes during the coding process. Commands used to approve and store files in the repository: 
+`Git add -A`  - adds files/directories to the staging area to be committed
+`Git commit -m " "` - commits files/directories to the repository with specific message
+`Git push` - pushes all committed inserts into the GitHub repository
+ 
 
 # 8. Deployment
+
+Steps of setting up and creating this project
+This project uses recommended for students Code Institute's template with the master branch. 
+
+> The first step to take was 
+
+to create a new repository in GitHub named Cocktails_and_Dreams. This project was edited and developed using the IDE GitPod and version control software Git to add, commit and push the code to GitHub where it was stored. 
+
+> The second step was 
+
+to deploy the project to Heroku: Cloud Application Platform which first needs some files to be set up, so that it knows what apps and dependencies are needed to run the app, typing in terminal commands
+- pip3 freeze --local > requirements.txt
+- echo web: python app.py > Procfile
+- add changes, commit and push them.
+
+
+> Then create Heroku App:
+
+- Log in to Heroku
+- Click on the New button on the top right of the dashboard and select Create a new app.
+- Create a unique app name 
+- Choose the closest region and click Create app.
+
+
+> Connect to GitHub Repository:
+
+- Navigate to the Deploy tab on top of the dashboard
+- Under the Deployment method, select GitHub.
+- Under Connect to GitHub check if a profile is displayed and then enter the name of the repository and click Search.
+- While repo has been found, click Connect.
+
+
+> Set up the Environment Variables:
+- Navigate to the Settings tab
+- Under Config Vars, click Reveal Config Vars.
+- Fill up the fields for key: value pairs
+    - "IP" : "0.0.0.0"
+    - "PORT" : "5000"
+    - "MONGO_DBNAME" : "name of the database"
+    - "MONGO_URI" : "string accessed from MongoDB"
+From MongoDB, under Data Storage, click Clusters and then click Connect, after click Connect your application, while ready copy provided link, replace < password > with the own one for the database access page, and the database name with the collection/database you want to connect to.
+    - "SECRET_KEY" : "private secret key"  
+
+> Automatic Deployment:
+
+- Navigate back to the Deployment tab.
+- Under Automatic deploys Enable Automatic Deploys, select the master branch and click Deploy Branch, wait until a message that app was successfully deployed
+
+<img src="assets/docs/pictures/success_dep.jpg" style="margin: 0;">
+
+
+> Deploying Locally
+
+Please note that the project will not run locally without a new env.py python file being created which contains the following with their corresponding values: IP, PORT, MONGO_DBNAME, MONGO_URI, SECRET_KEY. For security reasons, these details are not included in the repository. In order to make a clone, follow steps:
+- Log into GitHub.
+- Navigate to the Repositories tab.
+- Choose the desired repository.
+- Above the list of files, click on the Code drop-down menu.
+- Copy the clone URL under the HTTPS tab.
+- Open a terminal window in your IDE of choice.
+- Change the working directory to whichever location you want the cloned directory to be in.
+- Type git clone and then paste the URL that you copied earlier.
+- Press enter to create the clone.
+- In your IDE of choice, type pip installs -r requirements.txt in order to install all required packages for the project.
 
 # 9. Credits
 
