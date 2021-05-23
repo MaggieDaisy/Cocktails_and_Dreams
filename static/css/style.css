@@ -9,3 +9,7 @@ html {
 .text-shadow {
     text-shadow: 3px 3px 3px rgba(66,251,5);
 }
+
+.flashes h4 {
+    line-height: 2;
+}
