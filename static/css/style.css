@@ -2,6 +2,10 @@ body {
     background-color:pink;
 }
 
+html {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+ }
+
 .text-shadow {
     text-shadow: 3px 3px 3px rgba(66,251,5);
 }
