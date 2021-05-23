@@ -13,3 +13,11 @@ html {
 .flashes h4 {
     line-height: 2;
 }
+
+
+.footer-icons{
+    padding: 10px;
+    display: inline-flex;
+    line-height: 10px;
+    position: fixed;
+}
