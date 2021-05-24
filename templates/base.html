@@ -22,13 +22,13 @@
         <!-- top navbar -->
         <nav class="nav-extended text-shadow pink accent-3">
             <div class="nav-wrapper">
-                <a href="{{ url_for('get_recipes') }}" class="brand-logo black-text">Cocktails and Dreams</a>
+                <a href="{{ url_for('index') }}" class="brand-logo black-text">Cocktails and Dreams</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="{{ url_for('get_recipes') }}">Home</a></li>
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
                     <li><a href="#">Coctails</a></li>
                     {% if session.user %}
-                        <li><a href="#">Dream Recipe</a></li>
+                        <li><a href="{{ url_for('get_recipes') }}">Dream Recipe</a></li>
                         <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                         <li><a href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}
@@ -43,10 +43,10 @@
             <li>
                 <h4 class="center-align">Cocktails and Dreams</h4>
             </li>
-            <li><a href="{{ url_for('get_recipes') }}">Home</a></li>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
             <li><a href="#">Coctails</a></li>
             {% if session.user %}
-                <li><a href="#">Dream Recipe</a></li>
+                <li><a href="{{ url_for('get_recipes') }}">Dream Recipe</a></li>
                 <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                 <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             {% else %}
@@ -62,7 +62,7 @@
         {% if messages %}
         {% for message in messages %}
         <div class="row flashes">
-            <h4 class="yellow center-align">{{ message }}</h4>
+            <h5 class="yellow center-align">{{ message }}</h5>
         </div>
         {% endfor %}
         {% endif %}
@@ -75,22 +75,19 @@
     </main>
 
     <footer class="page-footer black-text text-shadow pink accent-3">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12 center-align">
-              <h5 class="black-text text-shadow">Find more about Us</h5>
+        <div class="container valign-wrapper">
             <p class="black-text">© 2021 ❁ MC</p>
+            <h5 class="black-text text-shadow">More about Us</h5>
+            <ul class="footer-icons valign-wrapper">
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f black-text"></i></a>
+                </li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram black-text"></i></a>
+                </li>
+                <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube black-text"></i></a>
+                </li>
+            </ul>
         </div>
-            <div class="col l4 offset-l2 s12 center-align">
-              <ul class="footer-icons valign">
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f black-text"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram black-text"></i></a></li>
-                <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube black-text"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
