@@ -30,6 +30,12 @@ def get_recipes():
     return render_template("recipes.html", recipes=recipes)
 
 
+@app.route("/get_categories")
+def get_categories():
+    categories = mongo.db.cetegories.find()
+    return render_template("index.html", cetegories=categories)
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
