@@ -2,23 +2,65 @@
 {% block content %}
 
 <div>
-    <img class="responsive-img" src="https://images.unsplash.com/photo-1507383832450-e75a770318ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80"> 
+  <img class="responsive-img"
+    src="https://images.unsplash.com/photo-1507383832450-e75a770318ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80">
 </div>
+<div class="card-panel lime lighten-4">
+<p class="center-align">Welcome to our community, if like us you are passionate to create a new coctails, then join and
+  share your dream recipes with us. If you are wondering how we categorizing our drinks : </p>
+</div>
+<div class="card-panel black">
+<ul class="collapsible">
+  <li>
+    <div class="collapsible-header black-text text-shadow pink accent-3">
+      <i class="fas fa-glass-whiskey"></i><strong>Sours</strong></div>
 
-<p class="flow-text">Welcome to our community, if like us you are passionate to create a new coctails, then join and share your dream recipes with us. If you are wondering how we categorizing our drinks : </p>
-
-<ul class="collapsible card-panel black">
-    {% for category in categories %}
-    <li>
-      <div class="collapsible-header black-text text-shadow pink accent-3">
-          <i class="fas fa-glass-whiskey"></i></div>
-          <strong>{{ categories.category_name}}</strong>
-      <div class="collapsible-body black-text pink lighten-5">
-          <strong>{{ categories.category_description }}</strong>
-        </div>
-    </li>
-    {% endfor %}
-  </ul>
+    <div class="collapsible-body black-text pink lighten-5">
+      <strong>Sours should always contain freshly squeezed, tart, tangy citrus juice, which is often paired with
+        simple sugar syrup to sweeten the mix. The choice of main alcohol is free here and depends mostly on
+        preferences. Sours are usually shaken in a cocktail shaker with ice cubes and served straight up. A great
+        example of Sours is all sidecars, margaritas, and cosmopolitans.</strong>
+    </div>
+  </li>
+  <li>
+    <div class="collapsible-header black-text text-shadow pink accent-3">
+      <i class="fas fa-glass-whiskey"></i><strong>Fizz or Collins</strong></div>
+    <div class="collapsible-body black-text pink lighten-5">
+      <strong>Fizzes should always contain anything with bubbles like prosecco or cava and some type of soda, serving in
+        highballs filled with ice cubes. These cocktails are the most refreshing, very simple to make, and light to
+        drink. A great example of fizzes is Champagne-based cocktails, Collinses, mules, and bucks like Aperol Spritz,
+        Gin and tonic, Mojito, or Bellini. </strong>
+    </div>
+  </li>
+  <li>
+    <div class="collapsible-header black-text text-shadow pink accent-3">
+      <i class="fas fa-glass-whiskey"></i><strong>Old-Fashioned</strong>
+    </div>
+    <div class="collapsible-body black-text pink lighten-5">
+      <strong>These are old-school short cocktails, often whiskey-based served in lowball filled with ice cubes.
+        Old-Fashioned always contain sweetened liquor zipped up with something bitter. Sweetness can come from sugar,
+        muddled with fruit, or a sweeter liqueur like triple sec or maraschino. The bitter ingredient can be a few
+        dashes of any bottled bitters like Angostura, or a bitter spirit like an amaro. A great example in this group is
+        Old-Fashioned, Sazerac, and Toronto.</strong>
+    </div>
+  </li>
+  <li>
+    <div class="collapsible-header black-text text-shadow pink accent-3">
+      <i class="fas fa-glass-whiskey"></i><strong>Three-parters</strong>
+    </div>
+    <div class="collapsible-body black-text pink lighten-5">
+      <strong>This collection of drinks always contain steered together a three-part combo of booze-like spirit and a
+        lower-alcohol ingredient like vermouth or beloved martini, plus a bitter or a syrup. A great example of
+        three-parters is Manhattan, Brooklyn, Negroni, boulevardier, Rob Roy.
+      </strong>
+    </div>
+  </li>
+</ul>
+</div>
+<div class="card-panel lime lighten-4 center-align">
+  <p>What's Your Dream Cocktail Today? </p>
+  <button class="btn pink accent-3 waves-effect waves-light"><a class="black-text text-shadow" href="{{ url_for('add_recipe') }}">Add Dream Recipe Here</a></button>
+  </div>
 
 <div id="main-gallery">
       <div class="row">
