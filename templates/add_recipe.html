@@ -13,7 +13,7 @@
                 <select id="category_name" name="category_name" class="validate" required>
                   <option value="" disabled selected>Choose Cocktail Category</option>
                   {% for category in categories %}
-                    <option value="{{ category.cetegory_name }}">{{ category.cetegory_name }}</option>
+                    <option value="{{ category.category_name }}">{{ category.category_name }}</option>
                   {% endfor %}
                 </select>
                 <label for="category_name">Cocktail Category</label>
