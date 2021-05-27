@@ -119,7 +119,7 @@ def add_recipe():
         flash("Your Dream Cocktail Recipe Was Successfully Added")
         return redirect(url_for("get_recipes"))
     categories = list(mongo.db.categories.find().sort("category_name", 1))
-    return render_template("add_recipe.html", cetegories=categories)
+    return render_template("add_recipe.html", categories=categories)
 
 
 if __name__ == "__main__":

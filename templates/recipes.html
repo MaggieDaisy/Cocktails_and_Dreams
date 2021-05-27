@@ -3,168 +3,35 @@
 
 <h4 class="pink accent-3 center-align text-shadow">All Dream Recipes</h4>
 
-{% for recipe in recipes %}
 <div class="row black">
+  {% for recipe in recipes %}
   <div class="col s12 m5">
     <div class="card-panel pink lighten-5">
       <div class="card lime lighten-5">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator"
-            src="https://images.unsplash.com/photo-1590064275032-8bd62d46d008?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80">
+          <img class="activator" src="{{ recipe.recipe_picture }}">
         </div>
         <div class="card-content">
-          <span><i class="fas fa-glass-whiskey"></i> Sours</span>
-          <span class="card-title activator black-text">Margarita<i class="fas fa-glass-martini text-shadow right">
-              Show Recipe</i></span>
+          <span><i class="fas fa-glass-whiskey text-shadow"></i> {{ recipe.category_name }} </span>
+          <span class="card-title activator black-text"> {{ recipe.recipe_name }} 
+            <i class="fas fa-glass-martini text-shadow right"> Show Recipe</i></span>
         </div>
         <div class="card-reveal">
-          <span class="card-title black-text">Margarita <i class="fas fa-window-close text-shadow"></i> Close
-            Recipe</span>
+          <span class="card-title black-text"> {{ recipe.recipe_name }} 
+            <i class="fas fa-window-close text-shadow"></i> Close</span>
           <hr class="pink accent-3">
-          <p><i class="fas fa-file-alt text-shadow"></i> A margarita is a cocktail consisting of tequila, orange
-            liqueur, and lime juice often served with salt on the rim of the glass. The drink is served shaken with
-            ice, blended with ice, or without ice.</p>
+          <p><i class="fas fa-file-alt text-shadow"></i> {{ recipe.recipe_description }} </p>
           <hr class="pink accent-3">
-          <p><i class="fas fa-lemon prefix text-shadow"></i> Cointreau 1 shot, Lime juice 1 shot, Tequila 2 shots
-          </p>
+          <p><i class="fas fa-lemon prefix text-shadow"></i> {{ recipe.recipe_ingredients }} </p>
           <hr class="pink accent-3">
-          <p><i class="fas fa-list-ol prefix text-shadow"></i> Rub the rim of the glass with the lime slice to make
-            the salt stick to it. Shake the other ingredients with ice, then carefully pour into the glass. Garnish
-            with lime slice and serve over ice.</p>
+          <p><i class="fas fa-list-ol prefix text-shadow"></i> {{ recipe.recipe_steps }} </p>
           <hr class="pink">
-          <p><i class="fas fa-utensil-spoon prefix text-shadow"></i> Margarita Glass, Shaker</p>
+          <p><i class="fas fa-utensil-spoon prefix text-shadow"></i> {{ recipe.recipe_tools }} </p>
         </div>
       </div>
     </div>
   </div>
-  <div class="col s12 m5">
-    <div class="card-panel pink lighten-5">
-      <div class="card lime lighten-5">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator"
-            src="https://images.unsplash.com/photo-1595977437232-9a0426ebfe4c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
-        </div>
-        <div class="card-content">
-          <span><i class="fas fa-glass-whiskey"></i> Old-Fashioned</span>
-          <span class="card-title activator black-text">Old Fashion<i class="fas fa-glass-martini text-shadow right">
-              Show Recipe</i></span>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title black-text">Old Fashioned <i class="fas fa-window-close text-shadow"></i> Close
-            Recipe</span>
-          <hr class="pink accent-3">
-          <p><i class="fas fa-file-alt text-shadow"></i> The Old Fashioned represents an essential chapter in cocktail
-            history & when made properly deserves its place amongst the great cocktails. This recipe perfectly balances
-            boozey, with sweet, fruity & bitter in a nuanced combination of ingredients that just never gets old. Feel
-            free to try Rye Whiskey, Cognac, or Rum in place of Bourbon in a nod to other "old-fashioned" cocktails.
-          </p>
-          <hr class="pink accent-3">
-          <p><i class="fas fa-lemon prefix text-shadow"></i> Bourbon Whiskey 2shots,
-            Simple Sugar Syrup 1tsp,
-            Angostura Bitters 2dashes
-          </p>
-          <hr class="pink accent-3">
-          <p><i class="fas fa-list-ol prefix text-shadow"></i> Build the whiskey, simple syrup & bitters into a mixing
-            glass with ice & stir. Strain over fresh ice into an old-fashioned glass, serve on the rocks. Twist the
-            orange peel over the surface of the cocktail, & then rub the rim of the glass with the orange peel before
-            dropping in to serve. Garnish with Cocktail cherry, Orange slice, Orange peel</p>
-          <hr class="pink">
-          <p><i class="fas fa-utensil-spoon prefix text-shadow"></i> Old Fashioned Glass,
-            Mixing Glass,
-            Stirring Spoon,
-            Citrus Peeler</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col s12 m5">
-    <div class="card-panel pink lighten-5">
-      <div class="card lime lighten-5">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator"
-            src="https://images.unsplash.com/photo-1510626176961-4b57d4fbad03?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80">
-        </div>
-        <div class="card-content">
-          <span><i class="fas fa-glass-whiskey"></i> Fizz or Collins</span>
-          <span class="card-title activator black-text">Mojito <i class="fas fa-glass-martini text-shadow right">
-              Show Recipe</i></span>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title black-text">Mojito <i class="fas fa-window-close text-shadow"></i> Close
-            Recipe</span>
-          <hr class="pink accent-3">
-          <p><i class="fas fa-file-alt text-shadow"></i> The refreshingly minty-citrus flavours of Cuba's Mojito
-            cocktail perfectly compliment white Rum & is wonderful on a hot summer's day. Highly popular, yet tricky to
-            get right & often served too sweet - the key to a good Mojito is to use plenty of fresh Mint & Lime juice
-            but not too much Sugar.</p>
-          <hr class="pink accent-3">
-          <p><i class="fas fa-lemon prefix text-shadow"></i> White Rum 2shots, Sugar Syrup 0.5shot, Lime Wedges 4, Fresh
-            Mint12 leaves, Soda Waterfill to the top
-          </p>
-          <hr class="pink accent-3">
-          <p><i class="fas fa-list-ol prefix text-shadow"></i> Place the Mint, Sugar Syrup & Lime wedges into a highball
-            glass & lightly muddle the ingredients together. The Lime wedges & Mint leaves should be bruised to release
-            their juices & essential oils. Fill the glass with crushed ice, pour over the White Rum & stir. Top up with
-            Soda Water & stir well from the bottom up. Garnish with a sprig of Mint & serve with a straw.
-          </p>
-          <hr class="pink">
-          <p><i class="fas fa-utensil-spoon prefix text-shadow"></i> Copper Mug, Ice Crusher, Muddler, Stirring Spoon,
-            Stainless Steel Straws</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col s12 m5">
-    <div class="card-panel pink lighten-5">
-      <div class="card lime lighten-5">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator"
-            src="https://images.unsplash.com/photo-1607687331899-4f157b139583?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
-        </div>
-        <div class="card-content">
-          <span><i class="fas fa-glass-whiskey"></i> Three-parters</span>
-          <span class="card-title activator black-text">Espresso Martini <i
-              class="fas fa-glass-martini text-shadow right">
-              Show Recipe</i></span>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title black-text">Espresso Martini <i class="fas fa-window-close text-shadow"></i> Close
-            Recipe</span>
-          <hr class="pink accent-3">
-          <p><i class="fas fa-file-alt text-shadow"></i> The espresso martini is a cold, coffee-flavored cocktail made
-            with vodka, espresso coffee, coffee liqueur, and sugar syrup. It is not a true martini as it contains
-            neither gin nor vermouth, but is one of many drinks that incorporate the term into their names.
-          </p>
-          <hr class="pink accent-3">
-          <p><i class="fas fa-lemon prefix text-shadow"></i> Vodka1.3 shots, Kahlua0.7 shot, Espresso Coffee1-2 shots,
-            Sugar Syrup 0.3 shot
-          </p>
-          <hr class="pink accent-3">
-          <p><i class="fas fa-list-ol prefix text-shadow"></i> Combine all ingredients in a shaker filled with ice &
-            shake well. Strain the mixture into a chilled cocktail Martini glass. Carefully place three coffee beans on
-            top of the drink for garnish & serve.
-          </p>
-          <hr class="pink">
-          <p><i class="fas fa-utensil-spoon prefix text-shadow"></i> Spirit Measure
-            Martini Glass
-            Shaker </p>
-        </div>
-      </div>
-    </div>
-  </div>
+  {% endfor %}
 </div>
-
-
-
-{{ recipe.category_name }}<br>
-{{ recipe.recipe_name }}<br>
-{{ recipe.recipe_description }}<br>
-{{ recipe.recipe_ingredients }}<br>
-{{ recipe.recipe_steps }}<br>
-{{ recipe.recipe_tools }}<br>
-{{ recipe.recipe_picture }}<br>
-
-
-{% endfor %}
 
 {% endblock %}
