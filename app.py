@@ -26,7 +26,7 @@ def index():
 
 @app.route("/get_recipes")
 def get_recipes():
-    recipes = mongo.db.recipes.find()
+    recipes = list(mongo.db.recipes.find())
     return render_template("recipes.html", recipes=recipes)
 
 
@@ -114,10 +114,12 @@ def add_recipe():
             "recipe_steps": request.form.get("recipe_steps"),
             "recipe_tools": request.form.get("recipe_tools"),
             "recipe_picture": request.form.get("recipe_picture"),
+            "created_by": session["user"]
         }
         mongo.db.recipes.insert_one(recipe)
         flash("Your Dream Cocktail Recipe Was Successfully Added")
         return redirect(url_for("get_recipes"))
+
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     return render_template("add_recipe.html", categories=categories)
 
