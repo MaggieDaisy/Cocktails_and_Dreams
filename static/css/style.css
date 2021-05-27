@@ -26,6 +26,10 @@ html {
     line-height: 2;
 }
 
+.btn-small {
+    margin: 15px 7px;
+}
+
 #main-gallery img{
     height:130px;
     width: 148px;
