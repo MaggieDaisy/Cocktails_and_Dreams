@@ -17,10 +17,12 @@
             <i class="fas fa-glass-martini text-shadow right"> Show Recipe</i></span>
         </div>
         <div class="center-align">
-          <button class="btn-small indigo accent-3 waves-effect waves-light"><a class="black-text text-shadow"
+          {% if session.user|lower == recipe.created_by|lower %}
+            <button class="btn-small indigo accent-3 waves-effect waves-light"><a class="black-text text-shadow"
             href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">Edit <i class="fas fa-edit right"></i></a></button>
             <button class="btn-small pink accent-3 waves-effect waves-light"><a class="black-text text-shadow"
               href="#">Delete <i class="fas fa-trash-alt"></i></a></button>
+          {% endif %}
         </div>
         <div class="card-reveal">
           <span class="card-title black-text"> {{ recipe.recipe_name }} 
