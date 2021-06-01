@@ -8,7 +8,7 @@ body {
     flex-direction: column;
   }
 
-  main {
+main {
     flex: 1 0 auto;
   }
 
@@ -29,8 +29,4 @@ html {
     margin: 15px 7px;
 }
 
-#main-gallery img{
-    height:130px;
-    width: 148px;
-    padding: 5px;
-}
+
