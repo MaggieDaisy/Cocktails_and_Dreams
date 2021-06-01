@@ -3,10 +3,11 @@
 
 <h4 class="pink accent-3 center-align text-shadow">All Dream Recipes</h4>
 
+<div class="card-panel black">
 <div class="row card-panel pink lighten-5">
   <form action="{{ url_for('search') }}" method="post" class="col s12">
     <div class="row valign-wrapper center-align">
-    <div class="input-field col s12 m8">
+    <div class="input-field col s12 m6">
       <i class="fas fa-search prefix"></i>
       <input type="text" name="query" id="query" minlength="3" class="validate" required>
       <label for="query">Search for cocktail name or ingredients</label>
@@ -20,20 +21,21 @@
     </div>
   </form>
 </div>
+</div>
 
 {% if recipes|length > 0 %}
 <div class="row black">
   {% for recipe in recipes %}
   <div class="col s12 m4">
-    <div class="card-panel pink lighten-5">
-      <div class="card lime lighten-5">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="{{ recipe.recipe_picture }}">
+    <div id="card-recipe" class="card-panel card pink lighten-5">
+   
+        <div class="card-image">
+          <img class="activator responsive-img" src="{{ recipe.recipe_picture }}">
         </div>
         <div class="card-content">
-          <span><i class="fas fa-glass-whiskey text-shadow"></i> {{ recipe.category_name }} </span>
-          <span class="card-title activator black-text"> {{ recipe.recipe_name }} 
-            <i class="fas fa-glass-martini text-shadow right"> Show Recipe</i></span>
+          <span><i class="fas fa-glass-whiskey text-shadow left"></i> {{ recipe.category_name }} </span>
+          <span class="card-title activator black-text center"> {{ recipe.recipe_name }} </span>
+           <span class="activator"><i class="fas fa-glass-martini text-shadow right"> Show Recipe </i></span>
         </div>
         <div class="center-align">
           {% if session.user|lower == recipe.created_by|lower %}
@@ -43,9 +45,9 @@
               href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}">Delete <i class="fas fa-trash-alt"></i></a></button>
           {% endif %}
         </div>
-        <div class="card-reveal">
+        <div class="card-reveal indigo lighten-5">
           <span class="card-title black-text"> {{ recipe.recipe_name }} 
-            <i class="fas fa-window-close text-shadow"></i> Close</span>
+            <i class="fas fa-window-close text-shadow right"></i></span>
           <hr class="pink accent-3">
           <p><i class="fas fa-file-alt text-shadow"></i> {{ recipe.recipe_description }} </p>
           <hr class="pink accent-3">
@@ -58,7 +60,7 @@
           <p><em><i class="fas fa-user prefix text-shadow"></i> shared by: {{ recipe.created_by }} </em></p>
         </div>
       </div>
-    </div>
+      
   </div>
   {% endfor %}
 </div>

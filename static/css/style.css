@@ -1,5 +1,5 @@
 body {
-    background-color: grey;
+    background-color: #757575;
 }
 
 body {
@@ -27,6 +27,17 @@ html {
 
 .btn-small {
     margin: 15px 7px;
+}
+
+#card-recipe{
+    min-height: 660px;
+}
+
+#footer-icons {
+    height: auto;
+    width: 70px;
+    display: inline-flex;
+    justify-content: space-between;
 }
 
 
