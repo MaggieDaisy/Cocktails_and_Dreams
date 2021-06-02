@@ -70,9 +70,10 @@ def register():
 def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
-        if not session.get('user', None):
-            return redirect(url_for('login'))
+        if not session.get("user", None):
+            return redirect(url_for("login"))
         return f(*args, **kwargs)
+
     return decorated_function
 
 
@@ -106,13 +107,15 @@ def login():
 @app.route("/profile", methods=["GET", "POST"])
 @login_required
 def profile():
+    if session["user"]:
+        recipes = list(mongo.db.recipes.find())
     if not session["user"]:
         return redirect(url_for("login"))
     user = mongo.db.users.find_one({"username": session["user"]})
     if not user:
         return redirect(url_for("register"))
     # grab the session user's username from database
-    return render_template("profile.html", username=user["username"])
+    return render_template("profile.html", username=user["username"], recipes=recipes)
 
 
 @app.route("/logout")
@@ -161,6 +164,7 @@ def edit_recipe(recipe_id):
         }
         mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, submit)
         flash("Your Dream Cocktail Recipe Was Successfully Updated")
+        return redirect(url_for("get_recipes"))
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_recipe.html", recipe=recipe, categories=categories)

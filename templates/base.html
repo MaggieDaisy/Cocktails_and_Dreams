@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,13 +12,11 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
     {% endblock %}
-
     <title>Cocktails and Dreams</title>
 </head>
-
 <body>
     <header>
-        <!-- top navbar -->
+        <!-- Top main navbar with logo and links -->
         <nav class="nav-extended text-shadow pink accent-3">
             <div class="nav-wrapper black-text">
                 <a href="{{ url_for('index') }}" class="brand-logo left black-text">Cocktails and Dreams</a>
@@ -28,7 +25,7 @@
                     <li><a class="black-text" href="{{ url_for('index') }}">Home</a></li>
                     <li><a class="black-text" href="{{ url_for('get_recipes') }}">Coctails</a></li>
                     {% if session.user %}
-                        <li><a class="black-text" href="{{ url_for('add_recipe') }}">Dream Recipe</a></li>
+                        <li><a class="black-text" href="{{ url_for('add_recipe') }}">Add Dream Recipe</a></li>
                         <li><a class="black-text" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                         <li><a class="black-text" href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}
@@ -38,10 +35,10 @@
                 </ul>
             </div>
         </nav>
-        <!-- mobile sidenav -->
+        <!-- Mobile side navbar -->
         <ul class="sidenav text-shadow pink accent-3" id="mobile-demo">
             <li>
-                <h4 class="right-align">Cocktails and Dreams</h4>
+                <h5 class="center-align"><a class="black-text" href="{{ url_for('index') }}">Cocktails and Dreams</a></h5>
             </li>
             <li><a href="{{ url_for('index') }}">Home</a></li>
             <li><a href="{{ url_for('get_recipes') }}">Coctails</a></li>
@@ -55,9 +52,8 @@
             {% endif %}
         </ul>
     </header>
-
+<!-- Flash messages section-->
     <section>
-        <!-- flash messages -->
         {% with messages = get_flashed_messages() %}
         {% if messages %}
         {% for message in messages %}
@@ -68,12 +64,13 @@
         {% endif %}
         {% endwith %}
     </section>
-
+<!-- Main section for content -->
     <main class="container">
         {% block content %}
+        
         {% endblock %}
     </main>
-
+<!-- Footer with Social Media icons and copyright -->
     <footer class="page-footer black-text text-shadow pink accent-3">
         <div class="row">
         <div class="col s4 center-align">
@@ -94,7 +91,7 @@
         </div>
         </div>
     </footer>
-
+<!-- Scripts for JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -102,5 +99,4 @@
     {% block scripts %}
     {% endblock %}
 </body>
-
 </html>
