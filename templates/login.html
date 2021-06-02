@@ -1,46 +1,40 @@
-{% extends "base.html" %}
+{% extends "base.html" %} 
 {% block content %}
 
+<!-- Header of the page-->
 <h3 class="center-align text-shadow">Log In</h3>
-
+<!-- Card panel for Log In -->
 <div class="row">
     <form class="col s12 m6 offset-m3" method="POST" action="{{ url_for('login') }}">
         <div class="card-panel pink lighten-5">
-            <!-- username input field-->
+            <!-- Username input field-->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-user prefix black-text text-shadow"></i>
-                    <input id="username" name="username" type="text" minlength="5" 
-                        maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                    <input id="username" name="username" type="text" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required />
                     <label for="username">Username</label>
                 </div>
             </div>
-            <!-- password input field-->
+            <!-- Password input field-->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-unlock-alt prefix black-text text-shadow"></i>
-                    <input id="password" name="password" type="password" minlength="5" 
-                        maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                    <input id="password" name="password" type="password" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required />
                     <label for="password">Password</label>
                 </div>
             </div>
-            <!-- login submit button-->
+            <!-- Login submit button-->
             <div class="row">
-                <button type="submit" class="col s12 btn-large pink accent-3 black-text text-shadow">
-                    Log In <i class="fas fa-sign-in-alt"></i>
-                </button>
+                <button type="submit" class="col s12 btn-large pink accent-3 black-text text-shadow">Log In <i class="fas fa-sign-in-alt"></i></button>
             </div>
-            </div>
+        </div>
     </form>
 </div>
-
+<!-- Link to redirect User if not registered yet-->
 <div class="row">
     <div class="col s12">
-        <p class="center-align flow-text">
-            Welcome!  New here?  <a href="{{ url_for('register') }}" class="light-blue-text text-darken-4">Register Your Account</a>
-        </p>
+        <p class="center-align flow-text">Welcome! New here? <a href="{{ url_for('register') }}" class="light-blue-text text-darken-4">Register Your Account</a></p>
     </div>
 </div>
 
-  {% endblock %}
-
+{% endblock %}
