@@ -1,5 +1,5 @@
 import os
-from flask import Flask, flash, render_template, redirect, request, session, url_for, g
+from flask import Flask, flash, render_template, redirect, request, session, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -70,10 +70,9 @@ def register():
 def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
-        if g.user is None:
-            return redirect(url_for("login", next=request.url))
+        if not session.get('user', None):
+            return redirect(url_for('login'))
         return f(*args, **kwargs)
-
     return decorated_function
 
 
