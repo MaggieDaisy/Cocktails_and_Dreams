@@ -4,31 +4,33 @@
 <!-- Header for the page-->
 <h3 class="center-align text-shadow">Register</h3>
 <!-- Card panel for Register user-->
-<div class="row">
-    <form class="col s12 m6 offset-m3" method="POST" action="{{ url_for('register') }}">
-        <div class="card-panel pink lighten-5">
-            <!-- Username input field-->
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-users prefix black-text text-shadow"></i>
-                    <input id="username" name="username" type="text" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required />
-                    <label for="username">Username</label>
+<div class="card-panel card black">
+    <div class="row">
+        <form class="col s12 m6 offset-m3" method="POST" action="{{ url_for('register') }}">
+            <div class="card-panel pink lighten-5">
+                <!-- Username input field-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-users prefix black-text text-shadow"></i>
+                        <input id="username" name="username" type="text" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required />
+                        <label for="username">Username</label>
+                    </div>
+                </div>
+                <!-- Password input field-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-key prefix black-text text-shadow"></i>
+                        <input id="password" name="password" type="password" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required />
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                <!-- Registration submit button-->
+                <div class="row">
+                    <button type="submit" class="col s12 btn-large pink accent-3 black-text text-shadow">Register <i class="fas fa-sign-in-alt"></i></button>
                 </div>
             </div>
-            <!-- Password input field-->
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-key prefix black-text text-shadow"></i>
-                    <input id="password" name="password" type="password" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required />
-                    <label for="password">Password</label>
-                </div>
-            </div>
-            <!-- Registration submit button-->
-            <div class="row">
-                <button type="submit" class="col s12 btn-large pink accent-3 black-text text-shadow">Register <i class="fas fa-sign-in-alt"></i></button>
-            </div>
-        </div>
-    </form>
+        </form>
+    </div>
 </div>
 <!-- Link to redirect User if already exist in database and can just go to Log In page-->
 <div class="row">

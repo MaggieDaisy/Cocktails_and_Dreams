@@ -2,9 +2,11 @@
 {% block content %}
 
 <!-- Landing page hero image and welcoming content-->
-<div class="card-panel indigo accent-3">
-    <h5 class="pink-text text-lighten-5 center-align text-shadow">Welcome to our community of bartenders, mixologists, and free-style cocktail enthusiasts!</h5>
+<div class="card-panel black">
+<div class="card-panel pink lighten-5 center-align">
+    <h5 class="black-text center-align text-shadow">Welcome to our community of bartenders, mixologists, and free-style cocktail enthusiasts!</h5>
     <img class="responsive-img" src="https://images.unsplash.com/photo-1507383832450-e75a770318ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="" />
+</div>
 </div>
 <!-- Card Panel with content -->
 <div class="card-panel black">
@@ -26,6 +28,7 @@
 <div class="card-panel pink lighten-5">
     <div class="carousel card-panel black lighten-4">
         <h5 class="pink-text text-lighten-5 center-align text-shadow">Capture with Us those magical moments of mixology!</h5>
+        <br>
         <a class="carousel-item" href="#1"><img src="https://images.unsplash.com/photo-1617524454933-ab8853813111?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=333&q=80" /></a>
 
         <a class="carousel-item" href="#2"><img src="https://images.unsplash.com/photo-1613934619052-27d9464c8819?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" /></a>
@@ -52,7 +55,7 @@
     <ul class="collapsible center-align">
         <li>
             <div class="collapsible-header black-text text-shadow pink accent-3">
-                <i class="fas fa-glass-whiskey center-align"></i><strong><i class="fas fa-angle-down"></i> Sours </strong>
+                <i class="fas fa-glass-whiskey"></i><strong><i class="fas fa-angle-down"></i> Sours </strong>
             </div>
             <div class="collapsible-body black-text pink lighten-5">
                 <strong>
@@ -98,10 +101,12 @@
     </ul>
 </div>
 <!-- Card panel with image and button pointing to register page -->
-<div class="card-panel indigo accent-3 center-align">
-    <h5 class="pink-text text-lighten-5 center-align text-shadow">What's Your Dream Cocktail Today?</h5>
+<div class="card-panel black">
+<div class="card-panel pink lighten-5 center-align">
+    <h5 class="black-text center-align text-shadow">What's Your Dream Cocktail Today?</h5>
     <img class="responsive-img" src="https://images.unsplash.com/photo-1610478920454-8df995a1d60a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="" />
     <button class="btn pink accent-3 waves-effect waves-light"><a class="black-text text-shadow" href="{{ url_for('register') }}">Add Dream Recipe Here</a></button>
+</div>
 </div>
 
 {% endblock %}

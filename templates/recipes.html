@@ -3,8 +3,8 @@
 <!-- Header of the page-->
 <h4 class="pink accent-3 center-align text-shadow">All Dream Recipes</h4>
 <!-- Card panel for Search field -->
-<div class="card-panel black">
-    <div class="row card-panel pink lighten-5">
+<div class="card-panel black center-align">
+    <div class="row card-panel indigo lighten-5">
         <form action="{{ url_for('search') }}" method="post" class="col s12">
             <div class="row valign-wrapper center-align">
                 <div class="input-field col s12 m6">
@@ -30,7 +30,7 @@
 {% if recipes|length > 0 %}
 <div class="row black">
     {% for recipe in recipes %}
-    <div class="col s12 m4">
+    <div class="col s12 m6 l4">
         <!-- Card panel to display recipe with elements-->
         <div id="card-recipe" class="card-panel card pink lighten-5">
             <!-- Card image for cocktail -->

@@ -4,7 +4,7 @@
 <!-- Card Panel for Username Profile -->
 <div class="row">
     <div class="col s12 m6 offset-m3 card-panel black">
-        <div class="card-panel pink lighten-5">
+        <div class="card-panel indigo lighten-5">
             <h3 class="center-align black-text text-shadow">
                 {{ username }}'s Profile
             </h3>
@@ -22,7 +22,7 @@
     {% for recipe in recipes %}
     <!-- Displays Card Panels only created by User being in current session-->
     {% if session.user|lower == recipe.created_by|lower %}
-    <div class="col s12 m4">
+    <div class="col s12 m6 l4">
         <div id="card-recipe" class="card-panel card pink lighten-5">
             <div class="card-image">
                 <img class="activator responsive-img" src="{{ recipe.recipe_picture }}" />
