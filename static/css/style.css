@@ -39,7 +39,8 @@ html {
 
 #footer-icons {
     height: auto;
-    width: 70px;
     display: inline-flex;
     justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
 }
