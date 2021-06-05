@@ -21,16 +21,19 @@ mongo = PyMongo(app)
 def index():
     """
     Users can get a general orientation about the content
-    of the landing page, and see and read about categories
+    of the landing page, and read about categories
     of cocktails that are going to be a part of recipes
     """
-    return render_template("index.html")
+    categories = list(mongo.db.categories.find())
+    return render_template("index.html", categories=categories)
 
 
 @app.route("/get_recipes")
 def get_recipes():
     """
-    Users can see whole collection of cocktail recipes
+    Users can see whole collection of card panels 
+    with cocktails recipes added by admin and 
+    other users
     """
     recipes = list(mongo.db.recipes.find())
     return render_template("recipes.html", recipes=recipes)
@@ -38,15 +41,29 @@ def get_recipes():
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
+    """
+    The searching bar where users can search by 
+    entering cocktail names or ingredients. 
+    Database text index was created for
+	recipe_name and recipe_ingredients
+    """
+    # pulling input from searching bar
     query = request.form.get("query")
+    # searching for text index
     recipes = list(mongo.db.recipes.find({"$text": {"$search": query}}))
+    # bringing user to the recipes page with filtered data
     return render_template("recipes.html", recipes=recipes)
 
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    """
+	 The registration page allows users to create 
+     an account by entering a username and password 
+     using the required format of the input field
+	"""
     if request.method == "POST":
-        # check if username already exists in database
+        # checking if username already exists in database
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()}
         )
