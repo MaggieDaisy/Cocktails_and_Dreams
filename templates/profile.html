@@ -16,7 +16,7 @@
         </div>
     </div>
 </div>
-<!-- Card Panels for Users recipes collection-->
+<!-- Card Panel for Users recipes collection-->
 {% if recipes|length > 0 %}
 <div class="row black">
     {% for recipe in recipes %}
@@ -60,18 +60,18 @@
             </div>
         </div>
     </div>
-</div>
-<!-- Displays confirmation modal for deleting recipe -->
-<div id="{{ recipe._id }}" class="modal card black">
-    <div class="modal-content pink lighten-5">
-        <h4 class="black-text text-shadow center-align">Are you sure about deleting this recipe?</h4>
-        <p class="center-align">Please note, that once you click on DELETE button, your dream recipe will be gone forever from your collection</p>
-    </div>
-    <div class="modal-footer center-align grey darken-1">
-        <!-- Button to confrim deletition -->
-        <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="modal-close btn pink accent-3 waves-effect waves-light black-text text-shadow">DELETE <i class="fas fa-trash-alt"></i></a>
-        <!-- Button to cancel deletition -->
-        <a href="#!" class="modal-close btn indigo accent-3 waves-effect waves-light black-text text-shadow">CANCEL <i class="fas fa-window-close"></i></a>
+    <!-- Displays confirmation modal for deleting recipe -->
+    <div id="{{ recipe._id }}" class="modal card black">
+        <div class="modal-content pink lighten-5">
+            <h4 class="black-text text-shadow center-align">Are you sure about deleting this recipe?</h4>
+            <p class="center-align">Please note, that once you click on DELETE button, your dream recipe will be gone forever from your collection</p>
+        </div>
+        <div class="modal-footer center-align grey darken-1">
+            <!-- Button to confrim deletition -->
+            <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="modal-close btn pink accent-3 waves-effect waves-light black-text text-shadow">DELETE <i class="fas fa-trash-alt"></i></a>
+            <!-- Button to cancel deletition -->
+            <a href="#!" class="modal-close btn indigo accent-3 waves-effect waves-light black-text text-shadow">CANCEL <i class="fas fa-window-close"></i></a>
+        </div>
     </div>
     {% endif %} 
     {% endfor %}

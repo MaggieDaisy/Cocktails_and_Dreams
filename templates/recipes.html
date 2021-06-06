@@ -1,5 +1,6 @@
 {% extends "base.html" %} 
 {% block content %}
+
 <!-- Header of the page-->
 <h4 class="pink accent-3 center-align text-shadow">All Dream Recipes</h4>
 <!-- Card panel for Search field -->
@@ -74,15 +75,25 @@
             </div>
         </div>
     </div>
-    {% endfor %} 
+    <!-- Displays confirmation modal for deleting recipe -->
+    <div id="{{ recipe._id }}" class="modal card black">
+        <div class="modal-content pink lighten-5">
+            <h4 class="black-text text-shadow center-align">Are you sure about deleting this recipe?</h4>
+            <p class="center-align">Please note, that once you click on DELETE button, your dream recipe will be gone forever from your collection</p>
+        </div>
+        <div class="modal-footer center-align grey darken-1">
+            <!-- Button to confrim deletition -->
+            <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="modal-close btn pink accent-3 waves-effect waves-light black-text text-shadow">DELETE <i class="fas fa-trash-alt"></i></a>
+            <!-- Button to cancel deletition -->
+            <a href="#!" class="modal-close btn indigo accent-3 waves-effect waves-light black-text text-shadow">CANCEL <i class="fas fa-window-close"></i></a>
+        </div>
+    </div>
+    {% endfor %}
 </div>
-
-<!-- Displays confirmation modal for deleting recipe -->
 
 {% else %}
 <!-- Flash message for search result if no ingredient or name was found in data base -->
-
 <h4 class="pink accent-3 center-align text-shadow">No Results Found</h4>
-{% endif%}
+{% endif%} 
 
 {% endblock %}
