@@ -2,7 +2,7 @@
 {% block content %}
 
 <!-- Header of the page-->
-<h4 class="pink accent-3 center-align text-shadow">All Dream Recipes</h4>
+<h4 class="pink accent-3 center-align">All Dream Recipes</h4>
 <!-- Card panel for Search field -->
 <div class="card-panel black">
     <div class="row card-panel indigo lighten-5">
@@ -16,11 +16,11 @@
                 <div class="col s12 m4">
                     <!-- Button for reset data-->
                     <button class="btn pink accent-3 waves-effect waves-light">
-                        <a class="black-text text-shadow" href="{{ url_for('get_recipes') }}">Reset <i class="fas fa-retweet left"></i></a>
+                        <a class="black-text" href="{{ url_for('get_recipes') }}">Reset <i class="fas fa-retweet left"></i></a>
                     </button>
                     <!-- Button for fetch data-->
                     <button class="btn indigo accent-3 waves-effect waves-light">
-                        <a class="black-text text-shadow" href="">Search <i class="fas fa-search left"></i></a>
+                        <a class="black-text" href="">Search <i class="fas fa-search left"></i></a>
                     </button>
                 </div>
             </div>
@@ -49,11 +49,11 @@
                 {% if session.user|lower == recipe.created_by|lower %}
                 <!-- Button for editing and correcting the content of recipe -->
                 <button class="btn-small indigo accent-3 waves-effect waves-light">
-                    <a class="black-text text-shadow" href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">Edit <i class="fas fa-edit right"></i></a>
+                    <a class="black-text" href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">Edit <i class="fas fa-edit right"></i></a>
                 </button>
                 <!-- Button for deleting recipe -->
                 <button class="btn-small pink accent-3 waves-effect waves-light modal-trigger" data-target="modal">
-                    <a class="black-text text-shadow modal-trigger" href="#{{ recipe._id }}">Delete <i class="fas fa-trash-alt"></i></a>
+                    <a class="black-text modal-trigger" href="#{{ recipe._id }}">Delete <i class="fas fa-trash-alt"></i></a>
                 </button>
                 {% endif %}
             </div>
@@ -83,9 +83,9 @@
         </div>
         <div class="modal-footer center-align grey darken-1">
             <!-- Button to confrim deletition -->
-            <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="modal-close btn pink accent-3 waves-effect waves-light black-text text-shadow">DELETE <i class="fas fa-trash-alt"></i></a>
+            <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="modal-close btn pink accent-3 waves-effect waves-light black-text">DELETE <i class="fas fa-trash-alt"></i></a>
             <!-- Button to cancel deletition -->
-            <a href="#!" class="modal-close btn indigo accent-3 waves-effect waves-light black-text text-shadow">CANCEL <i class="fas fa-window-close"></i></a>
+            <a href="#!" class="modal-close btn indigo accent-3 waves-effect waves-light black-text">CANCEL <i class="fas fa-window-close"></i></a>
         </div>
     </div>
     {% endfor %}
@@ -93,7 +93,7 @@
 
 {% else %}
 <!-- Flash message for search result if no ingredient or name was found in data base -->
-<h4 class="pink accent-3 center-align text-shadow">No Results Found</h4>
+<h4 class="pink accent-3 center-align">No Results Found</h4>
 {% endif%} 
 
 {% endblock %}
