@@ -31,6 +31,12 @@ html {
     background-color: rgba(66, 251, 5);
 }
 
+.nav-icon {
+    padding-left: 15px;
+    font-size: 2rem;
+}
+
+/* -- Buttons --*/
 .btn-small {
     margin: 15px 7px;
 }
@@ -49,9 +55,13 @@ html {
 #footer-icons {
     height: auto;
     display: inline-flex;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
+    
+}
+
+#footer-icons a {
+    justify-content: space-around;
+    margin: 10px;
+    font-size: 1.2rem;
 }
 
 /*-- Media Query for small size devices -- */
