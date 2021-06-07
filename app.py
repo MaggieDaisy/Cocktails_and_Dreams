@@ -166,7 +166,8 @@ def profile():
     if not user:
         return redirect(url_for("register"))
     # grabbing the session user's username from database
-    return render_template("profile.html", username=user["username"], recipes=recipes)
+    return render_template(
+        "profile.html", username=user["username"], recipes=recipes)
 
 
 @app.route("/logout")
@@ -242,7 +243,8 @@ def edit_recipe(recipe_id):
     # searching in database for corrected recipe by id
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("edit_recipe.html", recipe=recipe, categories=categories)
+    return render_template(
+        "edit_recipe.html", recipe=recipe, categories=categories)
 
 
 @app.route("/delete_recipe/<recipe_id>")
@@ -260,4 +262,5 @@ def delete_recipe(recipe_id):
 
 
 if __name__ == "__main__":
-    app.run(host=os.environ.get("IP"), port=int(os.environ.get("PORT")), debug=True)
+    app.run(host=os.environ.get("IP"), port=int(os.environ.get(
+        "PORT")), debug=True)
