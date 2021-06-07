@@ -35,6 +35,11 @@ html {
     margin: 15px 7px;
 }
 
+.hero-button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 /*-- Recipes and Profile page -- */
 #card-recipe {
     min-height: 890px;
