@@ -2,7 +2,7 @@
 {% block content %}
 
 <!-- Header for the page -->
-<h4 class="pink accent-3 center-align text-shadow">Here you can Edit and Correct your Dream Recipe</h4>
+<h4 class="pink accent-3 center-align">Here you can Edit and Correct your Dream Recipe</h4>
 <!-- Panel with input fields to edit and correct recipe-->
 <div class="row card-panel black container">
     <form class="col s12" method="POST" action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
@@ -77,10 +77,10 @@
             <div class="col s12 center-align">
                 <!-- Button for canceling insert-->
                 <button class="btn-large pink accent-3 waves-effect waves-light">
-                    <a class="black-text text-shadow" href="{{ url_for('get_recipes')}}">Cancel <i class="far fa-window-close"></i></a>
+                    <a class="black-text" href="{{ url_for('get_recipes')}}">Cancel <i class="far fa-window-close"></i></a>
                 </button>
                 <!-- Button for accepting insert-->
-                <button type="submit" class="btn-large waves-effect waves-light indigo accent-3 black-text text-shadow">Edit Recipe <i class="fas fa-edit right"></i></button>
+                <button type="submit" class="btn-large waves-effect waves-light indigo accent-3 black-text">Edit Recipe <i class="fas fa-edit right"></i></button>
             </div>
         </div>
     </form>
