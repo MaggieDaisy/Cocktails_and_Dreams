@@ -55,7 +55,6 @@ html {
 #footer-icons {
     height: auto;
     display: inline-flex;
-    
 }
 
 #footer-icons a {
@@ -69,9 +68,10 @@ html {
     html {
         font-size: 0.7rem;
     }
-}
-
-@media only screen and (max-width: 600px) {
+    .nav-icon {
+        padding-top: 15px;
+        font-size: 2rem;
+    }
     #card-recipe {
         min-height: 550px;
     }
