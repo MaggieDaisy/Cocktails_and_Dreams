@@ -3,7 +3,7 @@
 /*-- General -- */
 
 body {
-    background-color: #757575;
+    background-color: #78909c;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -61,7 +61,7 @@ html {
 #footer-icons a {
     justify-content: space-around;
     margin: 10px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 /*-- Media Query for small size devices -- */
