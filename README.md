@@ -1,4 +1,4 @@
-<img src="assets/docs/pictures/color_dac.jpg" style="margin: 0;">
+<img src="assets/docs/pictures/dream_co.jpg" style="margin: 0;">
 
 # Cocktails and Dreams
 
@@ -16,7 +16,7 @@
 
 # 1. Project purpose and introduction
 
-This project was created to demonstrate the acquisition of broader coding skills as part of the Code Institute Fullstack Web Developer Course. Technologies used during the application development process are mainly: HTML, CSS, JavaScript, Python+Flask, MongoDB with an additional framework such as Materialize and library such as jQuery. This project aims to create a full-stack website that will allow the user to add and search for information.
+This project was created to demonstrate the acquisition of broader coding skills as part of the Code Institute Fullstack Web Developer Course. Technologies used during the application development process are mainly: HTML, CSS, JavaScript, Python+Flask, MongoDB with an additional framework such as Materialize and library such as jQuery. This project aims to create a full-stack website that will allow the user to add information and search for information.
 
 # Cocktails and Dreams
 
@@ -32,7 +32,7 @@ Cocktails&Dreams is a full-stack application that allows users to manage a datas
 ### **Strategy**
 
 
-Potential users of this application are users who have a professional and hobbyist interest in cocktails mixology. Site can be very handy for users with basic skills who are looking for approved classic recipes and for new dream inspirations. Site will benefit also users who have already professional skills in bartending and want to share their own idea and get some new fresh overview for other users' recipes. 
+Potential users of this application are users who have a professional and hobbyist interest in cocktails mixology. Site can be very handy for users with basic skills who are looking for approved classic recipes, freestyle ones and for new dream inspirations. Site will benefit also users who have already professional skills in bartending and want to share their own idea and get some new fresh overview for other users' recipes. 
 
 
 ### **User Stories**
@@ -40,7 +40,6 @@ Potential users of this application are users who have a professional and hobbyi
 
 - As a user of a website, I wish to be able to navigate through very easily, so I can find interesting content
 - As a user of the website, I wish to be able to understand the purpose of the application, so I can gain brief orientation about what I can achieve by using it
-- As a user of the website, I wish to find an accessible contact form, so I can ask for resolving a problem I may have during browsing the app
 - As a user of the website, I want to have access to the register field, so I can easily create my profile account
 - As a user of the website, I wish to find different cocktail recipes, so I can satisfy my interest in that matter
 - As a user of the website, I wish to have visible access to social media, so I can follow after site owners/admin
@@ -61,14 +60,13 @@ Current and further developing and designing skill ability, the website provides
 - Informative content builds to give a clean and modern impression of the purpose of the website 
 - Responsive design allows navigating on different devices
 - Interactive features which are focused on providing a functional and appealing space for the user
-- Landing page with the hero image, introduction paragraph, and small showcase of gallery 
+- Landing page with the hero image, introduction paragraph, small showcase of gallery, and dropdown with categories
 - Pieces of key information about the basic selection of classic cocktails recipe
 - Clear and simple searching bar to browse cocktails recipes 
 - Informative and simple steps of creating a profile 
 - Clean information on how to log in and use the profile 
 - The simple mean of how to create, add, edit and delete a dream cocktail recipe
 - Log out feature possibility should be provided 
-- Contact form with possible sending features
 - Footer with social media icons to link to their sites
 
 
@@ -78,15 +76,15 @@ Current and further developing and designing skill ability, the website provides
 The structure of the application is based on meeting the first needs of the potential user. The website is simple structured, learnable, and intuitive, the first interaction enables the quick and easy finding of information and orientation between features and thema. The text content is short and consistent and the imagery is simple and clean, both describe the purpose and aim very well. All sections allow the user to interact with the site using built-in functions.
 
 All users of the website should be able to see the navigation bar, with clickable options, clear and modern content, and a footer with SM icons. The visual impression and design should be also consistent across all pages of the app.
-- Navigation Bar on the top of the page which is consistent  - contains names of each site page for browsing easily between them, site logo which acts as a link to the main page, toggle button visible on smaller devices
-- Home Page - contains a short introduction, small gallery, and hero image for a better presentation of the aim of the site
-- Cocktails Page - contains a card panel with the presentation of 6 basic cocktails and 'see recipe' button which is clickable for further view, search bar with the ability to search for the name of cocktail or ingredient
-- Register Page - contains two fields to fill up with 'Username' and 'Password' and a 'Submit' button and a link to the Log In Page
-- Log In Page - contains two fields to fill up with 'Username' and 'Password' and a 'Login' button 
-- Dream Recipe Page - contains a form available to fill out with the cocktail recipe fields like 'Name', 'Description', 'Ingredients', 'Tools' 'Steps', 'Image'  and 'Submit' button, this page is available for registered users, the dream recipe uploaded by the user contains a button for 'Edit' and 'Delete' the recipe
-- Profile Page - contains information about user and history uploaded recipes, this page is available for registered users
-- Log Out link - allows user to log out from the profile 
-- Footer on the bottom of the page which is also consistent - contains icons that act as a link to SM platforms, a contact form that allows contacting the site owner/admin
+- Navigation Bar on the top of the page which is consistent  - contains names of each site page for browsing easily between them, site logo which acts as a link to the main page, toggle button visible on smaller devices and icon matching the theme
+- Home Page - contains a short introduction, small carousel gallery, dropdown menu with cocktails categories, and hero images for a better presentation of the aim of the site
+- Cocktails Collection Page - contains a card panels with the presentation of 9 basic cocktails and 'Show Recipe' button which is clickable for further view of full recipe description, search bar with the ability to search for the name of cocktail or ingredient
+- Register Page - contains two fields to fill up with 'Username' and 'Password' and a 'Register' button, and a link to the Log In Page
+- Log In Page - contains two fields to fill up with 'Username' and 'Password' and a 'Login' button, and a link to the Register Page
+- Add Dream Recipe Page - contains a form available to fill out with the cocktail recipe fields like 'Category', 'Name', 'Description', 'Ingredients', 'Steps' 'Tools', 'Picture' and 'Submit' button, this page is available only for registered users
+- Profile Page - contains information about user and history uploaded recipes, this page is available for registered users, the dream recipe uploaded by the user contains a button for 'Edit' and 'Delete' the recipe
+- Log Out link - allows user to log out from the profile to protect a data
+- Footer on the bottom of the page which is also consistent - contains icons that act as a link to SM platforms
 
 
 
@@ -97,8 +95,14 @@ All users of the website should be able to see the navigation bar, with clickabl
 A website with 7 different separate content pages and the possibility to navigate between them
 - Header – fixed navigation bar with brand name and clickable links
 - 7 main sections called:
-    - Home, Cocktails, Register, Log In, Dream Recipe, Profile, Log Out 
-- Footer – fixed footer with social media icons 
+    - Home, 
+    - Cocktails Collection, 
+    - Register, 
+    - Log In, 
+    - Add Dream Recipe, 
+    - Profile, 
+    - Log Out 
+- Footer – footer with social media icons and copy right
 
 
 
@@ -106,14 +110,18 @@ A website with 7 different separate content pages and the possibility to navigat
 The visual experience of this project reflects the theme of colorful cocktails, retro and flashy neon design
 > Colors
 
-A blend of dark and strong neon colors reflecting the colors of retro bar and old school disco atmosphere. Throughout the whole project were used two main color shades such as
-pink 
-black
-flashy yellow and green 
+A blend of dark and strong neon colors reflecting the colors of retro bar and old school disco atmosphere. Throughout the whole project were used 5 main colors and their shades, picked from MaterializeCSS Color Palette
+- pink - #f50057 pink accent-3 and #fce4ec pink lighten-5
+- black - #000000 black
+- blue - #3d5afe indigo accent-3 and #e8eaf6 indigo lighten-5
+- grey - #78909c blue-grey lighten-1
+- flashy yellow/green - rgba(66, 251, 5)
+
+<img src="assets/docs/pictures/color_palette.jpg" style="margin: 0;">
 
 > Typography
 
-Font '' was used for the clean and transparent experience for the whole body content. Selected from google fonts after recommendations other users that this specific font is good for clear readability and professional layout of the recipe project
+Font 'Arvo' was used for the clean and transparent experience for the whole body content. Selected from Google Fonts after recommendations other users as an elegant font. This specific one is good for clear readability and the professional layout of the recipe project.
 
 > Icons 
 
@@ -121,7 +129,8 @@ Font '' was used for the clean and transparent experience for the whole body con
 > Images
 
 
-The selection of images has been made to present specific cocktails. Image presentation shows to users theme of the website 
+The selection of images for the carousel and card panels with recipes has been made to present specific cocktails. Imagery presentation shows to users the exact theme of the website making it understandable from the first impression.
+Hero images on the Home Page reflect colorful neon lights that bring atmosphere from the cocktail bar.
 
 
 
