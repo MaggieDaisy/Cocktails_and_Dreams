@@ -2,25 +2,22 @@
 {% block content %}
 
 <!-- Landing page hero image and welcoming content-->
-<div class="card-panel black">
-    <div class="card-panel pink lighten-5 center-align container">
-        <h6 class="black-text center-align">Welcome to our community of bartenders, mixologists, and free-style cocktail enthusiasts!</h6>
+<div class="card-panel pink lighten-5">
+    <div class="card-panel black center-align">
+        <h6 class="pink-text text-lighten-5 center-align">Welcome to our community of bartenders, mixologists, and free-style cocktail enthusiasts!</h6>
         <br />
-        <img
-            class="responsive-img"
-            src="https://images.unsplash.com/photo-1570716893556-8cae2e541ba8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-            alt="Colorful image with retro neon light at the bar"
-        />
+        <img class="responsive-img" src="{{ url_for('static', filename='images/color_dac.jpg') }}" alt="Colorful image with retro neon light at the bar" />
     </div>
 </div>
 <!-- Card Panel with content -->
 <div class="card-panel black">
-    <h6 class="pink-text text-lighten-5 center-align">
-        Are you passionate about creating new cocktails recipes? <br />
-        Join our project, and share your dream recipes with others!
-    </h6>
-    <br />
     <div class="card-panel indigo lighten-5">
+        <h6 class="black-text center-align">
+            Are you passionate about creating new cocktails recipes? <br />
+            Join our project, and share your dream recipes with others!
+        </h6>
+        <br />
+        <hr class="black" />
         <div class="row center-align">
             <div class="col s12 m6 l4">
                 <p class="flow-text">Mixology <i class="fas fa-cocktail text-shadow"></i></p>
@@ -32,7 +29,7 @@
             </div>
             <div class="col s12 m6 l4">
                 <p class="flow-text">Recipe <i class="fas fa-list-alt text-shadow"></i></p>
-                <p>By joining us, you can register your profile, create cocktails, and same time share a set of instructions that describe how to prepare Your Dream Recipe.</p>
+                <p>By joining us, you can register your profile, and be part of this creative project. Share with Us a set of instructions that describe how to prepare Your Dream Recipe.</p>
             </div>
         </div>
     </div>
@@ -40,7 +37,7 @@
 <!-- Images Carousel matching the theme of the page-->
 <div class="card-panel pink lighten-5">
     <div class="carousel card-panel black lighten-4">
-        <h5 class="pink-text text-lighten-5 center-align">Capture with Us those magical moments of mixology!</h5>
+        <h6 class="pink-text text-lighten-5 center-align">Capture with Us those magical moments of mixology!</h6>
         <br />
         <a class="carousel-item" href="#1">
             <img src="https://images.unsplash.com/photo-1617524454933-ab8853813111?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=333&q=80" alt="Cocktail example" />
@@ -94,33 +91,37 @@
 </div>
 <!-- Dropdown menu with cocktail categories and categories description -->
 <div class="card-panel black">
-    <h5 class="pink-text text-lighten-5 center-align">This is how we are categorizing our drinks :</h5>
-    <br />
-    <div class="container">
-        {% for category in categories %}
-        <ul class="collapsible center-align">
-            <li>
-                <div class="collapsible-header black-text pink accent-3">
-                    <i class="fas fa-glass-whiskey text-shadow"></i><strong><i class="fas fa-angle-down"></i> {{ category.category_name }} </strong>
-                </div>
-                <div class="collapsible-body black-text pink lighten-5">
-                    <strong>
-                        {{ category.category_description }}
-                    </strong>
-                </div>
-            </li>
-        </ul>
-        {% endfor %}
+    <div class="card-panel indigo lighten-5">
+        <h6 class="black-text center-align">This is how we are categorizing our cocktails! Which category do you choose?:</h6>
+        <br />
+        <div class="container">
+            {% for category in categories %}
+            <ul class="collapsible center-align">
+                <li>
+                    <div class="collapsible-header black-text pink accent-3">
+                        <i class="fas fa-glass-whiskey text-shadow"></i><strong><i class="fas fa-angle-down"></i> {{ category.category_name }} </strong>
+                    </div>
+                    <div class="collapsible-body pink-text text-lighten-5 black">
+                        <strong>
+                            {{ category.category_description }}
+                        </strong>
+                    </div>
+                </li>
+            </ul>
+            {% endfor %}
+        </div>
     </div>
 </div>
 <!-- Card panel with image and button pointing to register page -->
-<div class="card-panel black">
-    <div class="card-panel pink lighten-5 center-align container">
-        <h6 class="black-text center-align">What's Your Dream Cocktail Today?</h6>
-        <button class="btn pink accent-3 waves-effect waves-light hero-button">
-            <a class="black-text" href="{{ url_for('register') }}">Add Recipe Here <i class="fas fa-arrow-circle-right right"></i></a>
+<div class="card-panel pink lighten-5">
+    <div class="card-panel black center-align">
+        <button class="btn pink accent-3 waves-effect waves-light wrapper-align">
+            <a class="black-text" href="{{ url_for('register') }}">Add Recipe Here <i class="fas fa-arrow-circle-right"></i></a>
         </button>
-        <img class="responsive-img" src="https://images.unsplash.com/photo-1610478920454-8df995a1d60a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Bar Neon Light" />
+        <br />
+        <h6 class="pink-text text-lighten-5 center-align">What's Your Dream Cocktail Today?</h6>
+        <br />
+        <img class="responsive-img" src="{{ url_for('static', filename='images/neon_light.jpg') }}" alt="Bar Neon Light" />
     </div>
 </div>
 
