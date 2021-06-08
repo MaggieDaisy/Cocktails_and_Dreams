@@ -159,7 +159,7 @@ Hero images on the Home Page reflect colorful neon lights that bring atmosphere 
 * [**Git**](https://git-scm.com/) - Git was used as version control software to commit and push code to the GitHub repository where the source code is stored.
 * [**Heroku**](https://www.heroku.com) - Cloud Application Platform is a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud
 * [**Stack Overflow**](https://stackoverflow.com/) - was used as a general source of knowledge.
-* [**w3schools**](https://www.w3schools.com/howto/default.asp) - especially section 'How to' was used as a general source of knowledge.
+* [**w3schools**](https://www.w3schools.com/howto/default.asp) - was used as a general source of knowledge.
 * [**Google Chrome Developer Tools**](https://developers.google.com/web/tools/chrome-devtools) - this built-in developer tool was used to inspect page elements and help debug issues with the site layout and test different styles
 * [**Mobile-Friendly Test Tool**](https://search.google.com/test/mobile-friendly) - The Mobile-Friendly test tool was used to check if aplication is designed for mobile devices.
 * [**Balsamiq Wireframe**](https://balsamiq.com/wireframes/) - these quick and handful tool was used to create wireframes for planning project structure and layout.
@@ -168,12 +168,12 @@ Hero images on the Home Page reflect colorful neon lights that bring atmosphere 
 * [**Mastering Markdown**](https://guides.github.com/features/mastering-markdown/)– GitHub guide about Markdown. Lightweight and easy-to-use syntax for styling all forms of writing on the GitHub platform.
 * [**W3C Markup Validation Service**](https://validator.w3.org/) - validator was used to check the markup validity of content in HTML and CSS.
 * [**JSHint**](https://jshint.com/) - was used as tool that helps to detect errors and potential problems in JavaScript code.
+* [**PEP8 online**](http://pep8online.com/) - was used as tool check the code for PEP8 requirements
 * [**Closing Tag Checker for HTML5**](https://www.aliciaramirez.com/closing-tags-checker/) - was used to validate if all tags are open and close correctly.
-* [**HTML and CSS and JS Formatter**](https://webformatter.com/html) - was used to beautify code.
+* [**HTML and CSS and JS Formatter**](https://webformatter.com/html) - Free online tool to format an ugly HTML code, making it readable and pretty, with the proper indentation.
+* [**Black**](https://black.vercel.app/) - The uncompromising Python code formatter.
 * [**MS3 Strategy and Tips**](https://us02web.zoom.us/rec/play/Oue_1UJem3uxbPmzdT40ysKMOh4urdHf2M7ABy0zoHTGubzwWXedDZ31n1HOF0WwVNwYg34X_qrKcfiQ.FiJ8qeUidncmPnYi) - Zoom session about planning Milestone Project 3, recorded and posted on Zoom by Ed Bradley was used to structure planning steps for this project.
 * [**Grammarly**](https://app.grammarly.com/) - a comprehensive writing tool was used as a helper to write clear and correct text.
-* [**iColorpalette**](https://icolorpalette.com/) - has been used as a color picker to create a layout on the Website.
-* [**GIMP**](https://www.gimp.org/) - GNU Image Manipulation Program (GIMP) has been used as free & open source image editor
 * **Microsoft Paint** - a simple raster graphics editor has been used for editing and resizing pictures.
 * [**FaviconeCodeGenerator**](https://www.faviconcodegenerator.com/) - Favicon Code Generator is Free Online Favicon Converter and has been used to create a little graphic image (icon) associated with a webpage.
 * [**MDN Web Docs**](https://developer.mozilla.org/) - documentation repository and learning resource for web developers has been used as a general resource.
@@ -189,10 +189,15 @@ The final result of this project is a full-stack, front-end and back-en
 
 # 6. Project barriers and solutions
 
+- materialize framework styling web
+- loop for delete alert
+- login required decorator
+
+
 # 7. Version Control
 
 **Git** - free and open source distributed **Version Control System** was used to show tracking all changes during the coding process. Commands used to approve and store files in the repository: 
-`Git add -A`  - adds files/directories to the staging area to be committed
+`Git add .`  - adds files/directories to the staging area to be committed
 `Git commit -m " "` - commits files/directories to the repository with specific message
 `Git push` - pushes all committed inserts into the GitHub repository
  
@@ -269,6 +274,9 @@ Please note that the project will not run locally without a new env.py python fi
 
 The text content for this page was created by student Malgorzata Czerwonka (self-written) for a **non-existing company**, and for **educational purposes only**. Inspiration to create informative and consistent content was borrowed from following sources:
 - [**The Bar Cabinet**](https://thebarcabinet.com/) - The International Bartenders Association Official Cocktail List
+- [**IBA**](https://iba-world.com/) - The International Bartenders Association Official Website
+- [**Wikipedia**](https://en.wikipedia.org/wiki/List_of_cocktails) - List of cocktails
+
 
 > Media
 
@@ -281,17 +289,20 @@ All the images used in this site were picked from:
 - [**FAVPNG**](https://favpng.com/png_view/cocktail-cocktail-juice-margarita-drawing-png/Csp3tQ3K) - a database of free transparent PNG Images 
 
 > Code
+- Code inspiration for whole project borrowed from 'Task Manager' Walkthrough Mini Project CI 
+- Credit - jQuery code snippet for each component/feature used during development borrowed from [**Materialize CSS Initialization**](https://materializecss.com/)
+- Credit - vanilla JavaScript code snippet for Materialize CSS Initialization for form validation borrowed from 'Task Manager' Walkthrough Mini Project CI 
 
-- Code inspiration for ....  borrowed from - [** Responsive **](https ?????)
 
 # 10. Acknowledgments
 
-- Inspiration for this project was the walkthrouh mini project "Task Manager" 
+- Inspiration for this project was the walkthrough mini project "Task Manager" created by CI
 - I would like to thank: 
     - Code Institute tutors for creating inspiring content for the course and support during learning process,
-    - Slack Community for being available and helpful every single time when needed, 
-    - especially students and leaders like Edd for constructive zoom session about how to approach MS3, 
-    - and Harry for discussing issues about database and planning project 
+    - Slack Community, students and leaders, for being available and helpful every single time when needed,
+    - Tim for tip and advice how to use URLs input in this project
+    - Edd for constructive zoom session about how to approach MS3 and advice about returning categories
+    - especially to Harry for discussing issues about database and planning project, as well help with solving small errors and general support
     - and last but not least my mentor Sandeep Aggarwal for his guidance, patience, and effort during the development process
 
 
