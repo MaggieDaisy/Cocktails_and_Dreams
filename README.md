@@ -45,7 +45,7 @@ Potential users of this application are users who have a professional and hobbyi
 - As a user of the website, I wish to have visible access to social media, so I can follow after site owners/admin
 - As a user of the website, I wish that design is responsive, so I can look at the page on different size of devices
 - As a user of the website, I wish to log in with my username and password, so I can have easy access to the full content of the site 
-- As a user of the website, I wish to have the possibility to create my dream cocktail recipe, so I can share with others in communnity 
+- As a user of the website, I wish to have the possibility to create my dream cocktail recipe, so I can share it with others in the community 
 - As a user of the website, I wish to have the possibility to edit or delete my dream cocktail, so I can correct or remove the content 
 - As a user of the website, I wish to have the possibility to view my profile, so I can see recipes I added to the app 
 - As a user of the website, I wish to log out from my profile, so I can protect my data
@@ -115,7 +115,7 @@ A blend of dark and strong neon colors reflecting the colors of retro bar and ol
 - black - #000000 black
 - blue - #3d5afe indigo accent-3 and #e8eaf6 indigo lighten-5
 - grey - #78909c blue-grey lighten-1
-- flashy yellow/green - rgba(66, 251, 5)
+- additional to underline flash messages and icons - flashy yellow/green - rgba(66, 251, 5)
 
 <img src="assets/docs/pictures/color_palette.jpg" style="margin: 0;">
 
@@ -125,18 +125,37 @@ Font 'Arvo' was used for the clean and transparent experience for the whole body
 
 > Icons 
 
+Icons for Log In, Register, Add Recipe Form, Edit and Delete buttons and Social Media logos picked from Font Awesome free collection, the web's most popular icon set and toolkit. 
 
 > Images
 
 
 The selection of images for the carousel and card panels with recipes has been made to present specific cocktails. Imagery presentation shows to users the exact theme of the website making it understandable from the first impression.
 Hero images on the Home Page reflect colorful neon lights that bring atmosphere from the cocktail bar.
+Imagery collection were picked from Unsplash and Pexels.
 
 
 
 # 3. Features
 
 ### Existing Features
+
+Existing features on the site were created for making the User's Experience easy and intuitive. Application is clear to understand, as a first visible is the purpose of the website which is reading, creating, storing, and sharing recipes with others. Space created for users is very simple and comfortable, all features are clearly specified and pointing users to take further steps. The navigation bar and footer are consistent and act as a fixed component on every page which makes navigation smooth. Name of separate pages acts as active links and brings users to different parts of content and experiences. 
+- Home Page
+  - The Home Page contains 2 hero images, one on the top and one on the bottom, to give a general impression of the theme of the site
+  - It also contains a short section that acts as an introduction to the purpose of this app, so that a user can know already if this is the place to be
+  - A little Carousel with images shows examples of cocktails, neons, and bars, and encourages users to be creative after seeing this visual effect
+  - This page contains also a dropdown showcase with 5 cocktail categories, which presents category names and short category descriptions. First, 4 top categories can not be modified because they were created after strict international categorization. For better comfort of user experience, the 5 category was added as a freestyle option, so users can include every recipe which not match standard categorization. Categories can not be changed or added, they cover the needs of creating recipes in this field
+  - A link to Add Dream Recipe lays on top of the second hero picture in button form and heads actually to Register Page first, where the user can create an account (for new user) or go to login from the link provided (for registered user) and then enter to adding the recipe to the collection
+  - A link to view all Cocktail Collection is provided in the main navigation menu 
+
+- Cocktails Collection Page
+  - On top of the page, a 'Search' bar is placed allowing users to search for a cocktail name or any cocktail ingredient
+  - All recipes on this page appear as a collection of card panels.
+  - Every card panel displays the cocktail image on top, cocktail category and cocktail name in the middle, and the 'Show Recipe' button on the right
+  - After clicking this button user can see the backside of the card panel with the full recipe which contains the name, description, ingredients, steps, tools and shared by fields 
+  - Not logged in or registered users can see all card panels only as a reading display
+  - When the current user is the author of any of those cocktail recipes included in the whole collection, can actually see clickable buttons for 'Edit' and 'Delete' that specific cocktail
 
 ### Features left to implement when skills developed
 
@@ -181,7 +200,7 @@ Hero images on the Home Page reflect colorful neon lights that bring atmosphere 
 # 5. Testing
 
 The final result of this project is a full-stack, front-end and back-end web application based on the principles of user experience design, accessibility, and functionality. 
-**This is an interactive front-end and back-end web application developed and implemented by using HTML, CSS, JavaScript, Python+Flask, MongoDB with additional Materialize and jQuery elements**, so required testing was conducted based on visual effects, website layout and interactive actions which user can take it during navigation.
+**This is an interactive front-end and back-end web application developed and implemented by using HTML, CSS, JavaScript, Python+Flask, MongoDB with additional Materialize and jQuery elements**, so required testing was conducted based on functionality for getting and storing data, visual effects, website layout and interactive actions which user can take it during navigation.
 
 **General manual and further testing results:** ---> please click [here](tests.md)
 
@@ -284,9 +303,11 @@ All the images used in this site were picked from:
 
 - [**Unsplash**](https://unsplash.com/) - a website dedicated to sharing stock photography for free for every kind of project
 
+- [**Pexels**](https://www.pexels.com/) - the best free stock photos & videos shared by talented creators
+
 - [**Pixabay**](https://pixabay.com/) - a stunning free images & royalty free stock
 
-- [**FAVPNG**](https://favpng.com/png_view/cocktail-cocktail-juice-margarita-drawing-png/Csp3tQ3K) - a database of free transparent PNG Images 
+- [**FAVPNG**](https://favpng.com/) - a database of free transparent PNG Images 
 
 > Code
 - Code inspiration for whole project borrowed from 'Task Manager' Walkthrough Mini Project CI 
