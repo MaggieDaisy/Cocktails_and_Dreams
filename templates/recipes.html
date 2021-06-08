@@ -41,11 +41,11 @@
             <!-- Card content with cocktail category, and active link for name and icon -->
             <div class="card-content">
                 <span><i class="fas fa-glass-whiskey text-shadow left"></i> {{ recipe.category_name }} </span>
-                <span class="card-title activator black-text center"> {{ recipe.recipe_name }} </span>
-                <span class="activator"><i class="fas fa-glass-martini text-shadow right"> Show Recipe </i></span>
+                <span class="card-title activator black-text center"> {{ recipe.recipe_name }} <i class="fas fa-glass-martini text-shadow right tiny"> Show Recipe </i></span>
             </div>
+            <hr class="black">
             <!-- Display possibilty only for logged in user to edit and delete own recipe from collection-->
-            <div class="center-align">
+            <div class="center-align card-button">
                 {% if session.user|lower == recipe.created_by|lower %}
                 <!-- Button for editing and correcting the content of recipe -->
                 <button class="btn-small indigo accent-3 waves-effect waves-light">
