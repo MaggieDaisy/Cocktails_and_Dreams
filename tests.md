@@ -22,9 +22,11 @@ When the site developed closer to the final stage, the next test was to check ev
 
 <img src="assets/docs/pictures/JS_Hint.jpg" style="margin: 0;">
 
-- **PEP8** - check code for PEP8 requirements, passing code into PEP8 online returned one error 501 line too long
+- **PEP8** - check code for PEP8 requirements, passing code into PEP8 online returned no errors, however in the terminal still visible one problem about import env
 
-<img src="assets/docs/pictures/.jpg" style="margin: 0;">
+<img src="assets/docs/pictures/PEP8_test.jpg" style="margin: 0;">
+
+<img src="assets/docs/pictures/env_import.jpg" style="margin: 0;">
 
 # Other Tests
 - **Google Chrome Developer Tools** - The further tests of the application were about to check responsiveness in all pages using devtools. Multiple tests on multiple desktop sizes confirmed that a structure works quite well on mobile devices as well as bigger desktop sizes. The tests were conducted mainly with the use of the Google Chrome browser. However, the research also covered other browsers such as Mozilla Firefox, Microsoft Edge, and Apple Safari. In general, after inspecting by use of the tools available in each browser, it was found that the application displays correctly and is responsive to different screen sizes. 
