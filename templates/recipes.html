@@ -6,7 +6,7 @@
 <!-- Card panel for Search field -->
 <div class="card-panel black">
     <div class="row card-panel indigo lighten-5">
-        <form action="{{ url_for('search') }}" method="post" class="col s12">
+        <form action="{{ url_for('search') }}" method="POST" class="col s12">
             <div class="row valign-wrapper center-align">
                 <div class="input-field col s12 m6">
                     <i class="fas fa-search prefix"></i>
@@ -19,8 +19,8 @@
                         <a class="black-text" href="{{ url_for('get_recipes') }}">Reset <i class="fas fa-retweet left"></i></a>
                     </button>
                     <!-- Button for fetch data-->
-                    <button class="btn indigo accent-3 waves-effect waves-light">
-                        <a class="black-text" href="">Search <i class="fas fa-search left"></i></a>
+                    <button type="submit" class="btn indigo accent-3 waves-effect waves-light">
+                        <a class="black-text">Search <i class="fas fa-search right"></i></a>
                     </button>
                 </div>
             </div>
