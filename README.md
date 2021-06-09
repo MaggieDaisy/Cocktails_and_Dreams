@@ -104,6 +104,12 @@ A website with 7 different separate content pages and the possibility to navigat
     - Log Out 
 - Footer – footer with social media icons and copy right
 
+[**Database:**](/assets/docs/database/mongodb.pdf)
+
+A database MongoDB consists 3 collections called:
+- categories
+- recipes
+- users
 
 
 ### **Surface**
