@@ -138,26 +138,73 @@ Imagery collection were picked from Unsplash and Pexels.
 
 # 3. Features
 
-### Existing Features
+> Existing Features
 
 Existing features on the site were created for making the User's Experience easy and intuitive. Application is clear to understand, as a first visible is the purpose of the website which is reading, creating, storing, and sharing recipes with others. Space created for users is very simple and comfortable, all features are clearly specified and pointing users to take further steps. The navigation bar and footer are consistent and act as a fixed component on every page which makes navigation smooth. Name of separate pages acts as active links and brings users to different parts of content and experiences. 
-- Home Page
+
+- **Top Navigation Bar**
+  - The fixed navigation bar located at the top of the page shows on all site pages on every size of the device. Navbar allows users to easily browsing through the site and making sure that users can enter every part of the application from this place. Navbar menu is responsive and on small size deices collapse to a button. 
+  - The left side contains a logo icon that matches the theme of the application, and the logo brand name which acting as a link to the 'Home' Page.
+  - The right side contains all names of every single page and acts as links to specific content. Some of the pages are only visible and accessible to logged-in users, like 'Add Dream Recipe' and 'Profile'.
+
+- **Home Page**
   - The Home Page contains 2 hero images, one on the top and one on the bottom, to give a general impression of the theme of the site
   - It also contains a short section that acts as an introduction to the purpose of this app, so that a user can know already if this is the place to be
   - A little Carousel with images shows examples of cocktails, neons, and bars, and encourages users to be creative after seeing this visual effect
   - This page contains also a dropdown showcase with 5 cocktail categories, which presents category names and short category descriptions. First, 4 top categories can not be modified because they were created after strict international categorization. For better comfort of user experience, the 5 category was added as a freestyle option, so users can include every recipe which not match standard categorization. Categories can not be changed or added, they cover the needs of creating recipes in this field
-  - A link to Add Dream Recipe lays on top of the second hero picture in button form and heads actually to Register Page first, where the user can create an account (for new user) or go to login from the link provided (for registered user) and then enter to adding the recipe to the collection
-  - A link to view all Cocktail Collection is provided in the main navigation menu 
+  - A link to Add Dream Recipe lays on top of the second hero picture in button form. If a user is logged in, this link will bring him directly to Add Dream Recipe page. If a user is not logged in, the button heads actually to Log In page first, where the user can log in to an account (for existing users) or go alternatively to the Register link provided (for new users). After filling up all requirements, the user can start to browse the page fully.
+  - A link to view all Cocktail Collection is provided in the main navigation menu which acts as a handy tool stuck to the top of the page 
 
-- Cocktails Collection Page
+- **Cocktails Collection Page**
   - On top of the page, a 'Search' bar is placed allowing users to search for a cocktail name or any cocktail ingredient
   - All recipes on this page appear as a collection of card panels.
-  - Every card panel displays the cocktail image on top, cocktail category and cocktail name in the middle, and the 'Show Recipe' button on the right
-  - After clicking this button user can see the backside of the card panel with the full recipe which contains the name, description, ingredients, steps, tools and shared by fields 
-  - Not logged in or registered users can see all card panels only as a reading display
-  - When the current user is the author of any of those cocktail recipes included in the whole collection, can actually see clickable buttons for 'Edit' and 'Delete' that specific cocktail
+  - Every card panel displays the cocktail image on top, cocktail category on the left, cocktail name in the middle, and the 'Show Recipe' button on the right
+  - After clicking this button user can see the backside of the card panel with the full recipe and close button, card presents the name, description, ingredients, steps, tools and shared by fields 
+  - All user/viewers, who are not logged in or registered, can see a collection of card panels only as a reading display.
+  - When the current user is the author of any of those cocktail recipes included in the whole collection, can actually see clickable buttons for 'Edit' and 'Delete' that specific cocktail.
 
-### Features left to implement when skills developed
+- **Add Dream Recipe Page**
+  - This page is only accessible to users who have an account and are logged in
+  - Contains a form with fields. The first one with a dropdown that selects the possibility to 'Choose Cocktail Category' from 5 provided categories. Next fields to fill up with 'Cocktail Name', 'Little Description', 'Ingredients and Measurements', 'Steps To Take', 'Necessary Tools', 'Cocktail Picture'  for URLs input
+  - Every field contains a label and icon for a better explanation of how to fill the form and visual experience which will match the same fields on the card panels later on
+  - Fields are marked as required and when the user will click on a submit button on the bottom, and the form is not properly filled, the user will be alerted about filling the form correctly and not leaving empty fields.
+  - The 'Add Recipe' button will add a cocktail recipe to a database and bring the user to the 'Cocktails Collection' page. User will receive an alert about the successful addition of a recipe. A card panel with a new cocktail recipe will be visible now in the collection.
+
+- **Edit Recipe Page**
+  - This page is available only to the author of the recipe.
+  - To enter this feature is possible from the card panel recipe from the "Profile' page and the 'Cocktail Collection" page by using the button 'Edit' on the bottom of a recipe, which brings the user to this page.
+  - Edit recipe appears as a separate page, that returns a pre-filled form with all the values of the recipe, that the user entered during creating process. Here user can correct the content of the recipe, and use two buttons, in case of the desire for editing or deletion
+  - Button 'Edit Recipe' - located on the bottom of the form, will edit the recipe and send the author to 'Cocktails Collection' and show an alert that the recipe was successfully edited. Button 'Cancel' - will return the author to the 'Cocktails Collection' page if he decides not to make any changes in a recipe and leave the page.
+  - Button 'Delete' located on the bottom of recipe triggers instead of a safety purposed modal, which returns an alert message if an author is sure that wants to delete this recipe for good and protects from unwanted deletion. Alert gives two button options, a 'Cancel' which will close the modal and return author back to the card panel, and 'Delete' which will delete a recipe from collection and database and return alert about successfully deletion process and brigs author to 'Cocktails Collection' page
+
+- **Register Page**
+  - A page with form fields for 'Username', 'Password',  and a 'Register' button is available for not logged in, and new users. Input fields contain labels that inform users about the correct text format acceptable for insertion. If fields are filled incorrectly or left empty, then the user will receive an alert about that. If a username exists in the database then will receive a flash message that the username has been already taken.
+  - This page provides, under the form, alternatively link to the Log In page for the users who have been already created an account.
+  - When input fields are properly filled and the 'Register' button is clicked, the user will be brought to the 'Profile' page and receive an alert about confirming their registration.
+
+- **Login Page**
+  - A page with form fields for 'Username', 'Password',  and a 'Log In' button is available for existing but not logged-in users. Input fields contain labels that inform users about the correct text format acceptable for logging in. If fields are filled incorrectly or left empty, then the user will receive an alert about that. If a username does not exist in the database or is incorrect then will receive a flash message. 
+  - This page provides, under the form, alternatively link to the Register page for the users who do not create an account yet. 
+  - When input fields are properly filled and the 'Login In' button is clicked, the user will be brought to the 'Profile' page and receive an alert about confirming their logging in process.
+
+- **Profile Page**
+  - The 'Profile' page is only available to register and logged-in users.
+  - On the top of the page, a visible card panel with welcoming text and username.
+  - Collection of cocktail recipes created only by the author are displayed under the welcoming card panel. Panels are provided the same way like on the 'Cocktails Collection' page and allow the author for editing and deleting own recipes. 
+
+- **Log Out**
+  - The 'Log Out' link successfully logs the user out from his profile page. That provides security to protect data recipes created by this user. 
+
+- **Footer**
+  - Contains Social Media icons that act as links for Facebook, Instagram, and YouTube and bring the user to the main platforms. In the future should bring the user to real social media provided by the community. Links open in a new tab so that the user can smoothly navigate back to the application. 
+
+> Features left to implement in the future when skills developed
+
+- An interesting feature would be to create a rating recipe option, so users can give themselves a general score for the content and idea, like stars for cocktails. 
+- Another one could be the ability to add comments for recipes or even create a sort of forum, where users can discuss the recipes, details, give a feed back and participate in the life of the website being a part of the community. 
+- Going further after this thought would be a possibility to create a space for saving and exchanging recipes with another user
+- Later on, when the application will grow up would be necessary to add an administration page, which will allow controlling all of the input content added by users. For the current stage of the application, the admin can add, correct and delete content by using a database where all information is stored. 
+
 
 # 4. Technologies and Resources used 
 * [**Code Institute Fullstack Web Developer Course Content**](https://codeinstitute.net/) - was used as the main source of fundamental knowledge and inspiration.
@@ -322,7 +369,7 @@ All the images used in this site were picked from:
     - Code Institute tutors for creating inspiring content for the course and support during learning process,
     - Slack Community, students and leaders, for being available and helpful every single time when needed,
     - Tim for tip and advice how to use URLs input in this project
-    - Edd for constructive zoom session about how to approach MS3 and advice about returning categories
+    - Ed for constructive zoom session about how to approach MS3 and advice about returning categories
     - especially to Harry for discussing issues about database and planning project, as well help with solving small errors and general support
     - and last but not least my mentor Sandeep Aggarwal for his guidance, patience, and effort during the development process
 
