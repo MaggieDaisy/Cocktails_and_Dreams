@@ -22,7 +22,7 @@ This project was created to demonstrate the acquisition of broader coding skills
 
 [**View the live project here**](https://cocktails-and-dreams-m.herokuapp.com/)
 
-Cocktails&Dreams is a full-stack application that allows users to manage a dataset about this domain. The purpose of this app is to demonstrate basic cocktails' classic recipes, add new dream recipes, and search for existing ones by name or ingredient. This app can benefit cocktails enthusiasts who like to experiment with mixing ingredients and professional bartenders who can provide officially approved pieces of information. The website offers the possibility to users to share their data with the community and benefit from having convenient access to the data provided by all the members. This website is designed in such a way that the user can check it at any time, on the phone on the road, or at home on the computer. The project may be expanded in the future with other, more detailed sections.
+Cocktails & Dreams is a full-stack application that allows users to manage a dataset about this domain. The purpose of this app is to demonstrate basic cocktails classic recipes, add new dream recipes, and search for existing ones by name or ingredient. This app can benefit cocktails enthusiasts who like to experiment with mixing ingredients and professional bartenders who can provide officially approved pieces of information. The website offers the possibility to users to share their data with the community and benefit from having convenient access to the data provided by all the members. This website is designed in such a way that the user can check it at any time, on the phone on the road, or at home on the computer. The project may be expanded in the future with other, more detailed sections.
 
 <img src="assets/docs/..... add a mockup .... jpg" style="margin: 0;">
 
@@ -32,7 +32,7 @@ Cocktails&Dreams is a full-stack application that allows users to manage a datas
 ### **Strategy**
 
 
-Potential users of this application are users who have a professional and hobbyist interest in cocktails mixology. Site can be very handy for users with basic skills who are looking for approved classic recipes, freestyle ones and for new dream inspirations. Site will benefit also users who have already professional skills in bartending and want to share their own idea and get some new fresh overview for other users' recipes. 
+Potential users of this application are users who have a professional and hobbyist interest in cocktails mixology. The site can be very handy for users with basic skills who are looking for approved classic recipes, freestyle ones, and for new dream inspirations. The site will benefit also users who have already professional skills in bartending and want to share their own idea and get some new fresh overview for other users' recipes. 
 
 
 ### **User Stories**
@@ -60,7 +60,7 @@ Current and further developing and designing skill ability, the website provides
 - Informative content builds to give a clean and modern impression of the purpose of the website 
 - Responsive design allows navigating on different devices
 - Interactive features which are focused on providing a functional and appealing space for the user
-- Landing page with the hero image, introduction paragraph, small showcase of gallery, and dropdown with categories
+- Landing page with the hero image, introduction paragraph, small showcase of a gallery, and dropdown with categories
 - Pieces of key information about the basic selection of classic cocktails recipe
 - Clear and simple searching bar to browse cocktails recipes 
 - Informative and simple steps of creating a profile 
@@ -73,13 +73,13 @@ Current and further developing and designing skill ability, the website provides
 ### **Structure**
 
 
-The structure of the application is based on meeting the first needs of the potential user. The website is simple structured, learnable, and intuitive, the first interaction enables the quick and easy finding of information and orientation between features and thema. The text content is short and consistent and the imagery is simple and clean, both describe the purpose and aim very well. All sections allow the user to interact with the site using built-in functions.
+The structure of the application is based on meeting the first needs of the potential user. The website is simple structured, learnable, and intuitive, the first interaction enables the quick and easy finding of information and orientation between features and theme. The text content is short and consistent and the imagery is simple and clean, both describe the purpose and aim very well. All sections allow the user to interact with the site using built-in functions.
 
 All users of the website should be able to see the navigation bar, with clickable options, clear and modern content, and a footer with SM icons. The visual impression and design should be also consistent across all pages of the app.
-- Navigation Bar on the top of the page which is consistent  - contains names of each site page for browsing easily between them, site logo which acts as a link to the main page, toggle button visible on smaller devices and icon matching the theme
+- Navigation Bar on the top of the page which is consistent  - contains names of each site page for browsing easily between them, site logo which acts as a link to the main page, toggle button visible on smaller devices, and icon matching the theme
 - Home Page - contains a short introduction, small carousel gallery, dropdown menu with cocktails categories, and hero images for a better presentation of the aim of the site
-- Cocktails Collection Page - contains a card panels with the presentation of 9 basic cocktails and 'Show Recipe' button which is clickable for further view of full recipe description, search bar with the ability to search for the name of cocktail or ingredient
-- Register Page - contains two fields to fill up with 'Username' and 'Password' and a 'Register' button, and a link to the Log In Page
+- Cocktails Collection Page - contains card panels with the presentation of 9 basic cocktails and 'Show Recipe' button which is clickable for the further view of full recipe description, search bar with the ability to search for the name of cocktail or ingredient
+- Register Page - contains two fields to fill up with 'Username' and 'Password' and a 'Register' button, and a link to the 'Log In' Page
 - Log In Page - contains two fields to fill up with 'Username' and 'Password' and a 'Login' button, and a link to the Register Page
 - Add Dream Recipe Page - contains a form available to fill out with the cocktail recipe fields like 'Category', 'Name', 'Description', 'Ingredients', 'Steps' 'Tools', 'Picture' and 'Submit' button, this page is available only for registered users
 - Profile Page - contains information about user and history uploaded recipes, this page is available for registered users, the dream recipe uploaded by the user contains a button for 'Edit' and 'Delete' the recipe
@@ -102,11 +102,11 @@ A website with 7 different separate content pages and the possibility to navigat
     - Add Dream Recipe, 
     - Profile, 
     - Log Out 
-- Footer – footer with social media icons and copy right
+- Footer – footer with social media icons and copyright
 
 [**Database:**](/assets/docs/database/mongodb.pdf)
 
-A database MongoDB consists 3 collections called:
+A database MongoDB consists of 3 collections called:
 - categories
 - recipes
 - users
@@ -138,7 +138,7 @@ Icons for Log In, Register, Add Recipe Form, Edit and Delete buttons and Social 
 
 The selection of images for the carousel and card panels with recipes has been made to present specific cocktails. Imagery presentation shows to users the exact theme of the website making it understandable from the first impression.
 Hero images on the Home Page reflect colorful neon lights that bring atmosphere from the cocktail bar.
-Imagery collection were picked from Unsplash and Pexels.
+Imagery collections were picked from Unsplash and Pexels.
 
 
 
@@ -166,7 +166,7 @@ Existing features on the site were created for making the User's Experience easy
   - All recipes on this page appear as a collection of card panels.
   - Every card panel displays the cocktail image on top, cocktail category on the left, cocktail name in the middle, and the 'Show Recipe' button on the right
   - After clicking this button user can see the backside of the card panel with the full recipe and close button, card presents the name, description, ingredients, steps, tools and shared by fields 
-  - All user/viewers, who are not logged in or registered, can see a collection of card panels only as a reading display.
+  - All users/viewers, who are not logged in or registered, can see a collection of card panels only as a reading display.
   - When the current user is the author of any of those cocktail recipes included in the whole collection, can actually see clickable buttons for 'Edit' and 'Delete' that specific cocktail.
 
 - **Add Dream Recipe Page**
@@ -207,7 +207,7 @@ Existing features on the site were created for making the User's Experience easy
 > Features left to implement in the future when skills developed
 
 - An interesting feature would be to create a rating recipe option, so users can give themselves a general score for the content and idea, like stars for cocktails. 
-- Another one could be the ability to add comments for recipes or even create a sort of forum, where users can discuss the recipes, details, give a feed back and participate in the life of the website being a part of the community. 
+- Another one could be the ability to add comments for recipes or even create a sort of forum, where users can discuss the recipes, details, give feedback and participate in the life of the website being a part of the community. 
 - Going further after this thought would be a possibility to create a space for saving and exchanging recipes with another user
 - Later on, when the application will grow up would be necessary to add an administration page, which will allow controlling all of the input content added by users. For the current stage of the application, the admin can add, correct and delete content by using a database where all information is stored. 
 
@@ -222,8 +222,8 @@ Existing features on the site were created for making the User's Experience easy
 * [**Flask**](https://www.fullstackpython.com/flask.html) - a lightweight WSGI web application framework
 * [**Jinja**](https://jinja.palletsprojects.com/en/3.0.x/) - a web template engine for the Python programming language
 * [**MongoDB Atlas Database**](https://www.mongodb.com/cloud/atlas1)- was used as a source-available cross-platform document-oriented database program for storing information 
-* [**Materialize**](https://materializecss.com/) - Materialize front-end framework was used as an open-source to create responsive features and modern design of the Website.
-* [**jQuery**](https://jquery.com/) - jQuery library was used as an open-source to create interactive features.
+* [**Materialize**](https://materializecss.com/) - the MaterializeCSS front-end framework was used as an open-source to create responsive features and modern design of the Website.
+* [**jQuery**](https://jquery.com/) - the jQuery library was used as an open-source to create interactive features.
 * [**Font Awesome**](https://fontawesome.com/) - Font Awesome Icons were used for social media links and marking separate parts of sections.
 * [**Google Fonts**](https://fonts.google.com/specimen/Inconsolata) - Google Font used throughout this project
 * [**Gitpod**](https://www.gitpod.io/) - Integrated Development Environment was used to develop the Website.
@@ -233,7 +233,7 @@ Existing features on the site were created for making the User's Experience easy
 * [**Stack Overflow**](https://stackoverflow.com/) - was used as a general source of knowledge.
 * [**w3schools**](https://www.w3schools.com/howto/default.asp) - was used as a general source of knowledge.
 * [**Google Chrome Developer Tools**](https://developers.google.com/web/tools/chrome-devtools) - this built-in developer tool was used to inspect page elements and help debug issues with the site layout and test different styles
-* [**Mobile-Friendly Test Tool**](https://search.google.com/test/mobile-friendly) - The Mobile-Friendly test tool was used to check if aplication is designed for mobile devices.
+* [**Mobile-Friendly Test Tool**](https://search.google.com/test/mobile-friendly) - The Mobile-Friendly test tool was used to check if an application is designed for mobile devices.
 * [**Balsamiq Wireframe**](https://balsamiq.com/wireframes/) - these quick and handful tool was used to create wireframes for planning project structure and layout.
 * [**Am I Responsive Bookmarklet**](http://ami.responsivedesign.is/) - Multi Device Website Mockup Generator was used to create the Mockup image for this README file.
 * [**Make a README**](https://www.makeareadme.com/) – a page that shows suggestions on how to create a good Readme file.
@@ -248,12 +248,12 @@ Existing features on the site were created for making the User's Experience easy
 * [**Grammarly**](https://app.grammarly.com/) - a comprehensive writing tool was used as a helper to write clear and correct text.
 * **Microsoft Paint** - a simple raster graphics editor has been used for editing and resizing pictures.
 * [**FaviconeCodeGenerator**](https://www.faviconcodegenerator.com/) - Favicon Code Generator is Free Online Favicon Converter and has been used to create a little graphic image (icon) associated with a webpage.
-* [**MDN Web Docs**](https://developer.mozilla.org/) - documentation repository and learning resource for web developers has been used as a general resource.
+* [**MDN Web Docs**](https://developer.mozilla.org/) - a documentation repository and learning resource for web developers has been used as a general resource.
 
 # 5. Testing
 
 The final result of this project is a full-stack, front-end and back-end web application based on the principles of user experience design, accessibility, and functionality. 
-**This is an interactive front-end and back-end web application developed and implemented by using HTML, CSS, JavaScript, Python+Flask, MongoDB with additional Materialize and jQuery elements**, so required testing was conducted based on functionality for getting and storing data, visual effects, website layout and interactive actions which user can take it during navigation.
+**This is an interactive front-end and back-end web application developed and implemented by using HTML, CSS, JavaScript, Python+Flask, MongoDB with additional Materialize and jQuery elements**, so required testing was conducted based on functionality for getting and storing data, visual effects, website layout, and interactive actions which user can take it during navigation.
 
 **General manual and further testing results:** ---> please click [here](tests.md)
 
@@ -268,7 +268,7 @@ The final result of this project is a full-stack, front-end and back-en
 
 # 7. Version Control
 
-**Git** - free and open source distributed **Version Control System** was used to show tracking all changes during the coding process. Commands used to approve and store files in the repository: 
+**Git** - free and open-source distributed **Version Control System** was used to show tracking all changes during the coding process. Commands used to approve and store files in the repository: 
 `Git add .`  - adds files/directories to the staging area to be committed
 `Git commit -m " "` - commits files/directories to the repository with specific message
 `Git push` - pushes all committed inserts into the GitHub repository
@@ -328,23 +328,19 @@ From MongoDB, under Data Storage, click Clusters and then click Connect, after c
 
 > Deploying Locally
 
-Please note that the project will not run locally without a new env.py python file being created which contains the following with their corresponding values: IP, PORT, MONGO_DBNAME, MONGO_URI, SECRET_KEY. For security reasons, these details are not included in the repository. In order to make a clone, follow steps:
-- Log into GitHub.
-- Navigate to the Repositories tab.
-- Choose the desired repository.
-- Above the list of files, click on the Code drop-down menu.
+Very important to notify is that project will not run locally without an env.py python file, which contains the following secret with their corresponding values: IP, PORT, MONGO_DBNAME, MONGO_URI, SECRET_KEY. For security reasons about fragile data information, these details are not included in the repository. To make a clone please follow the steps below:
+- Log into GitHub and navigate to the Repositories tab.
+- Choose the desired repository and above the list of the files, click on the Code drop-down menu.
 - Copy the clone URL under the HTTPS tab.
-- Open a terminal window in your IDE of choice.
-- Change the working directory to whichever location you want the cloned directory to be in.
-- Type git clone and then paste the URL that you copied earlier.
-- Press enter to create the clone.
-- In your IDE of choice, type pip installs -r requirements.txt in order to install all required packages for the project.
+- Open a terminal window in your IDE and change the working directory to the desired location for the cloned directory.
+- Type git clone and then paste the URL that you copied earlier, and simply press enter to create the clone.
+- In your IDE of choice, type pip installs -r requirements.txt to install all required packages for the project.
 
 # 9. Credits
 
 > Content
 
-The text content for this page was created by student Malgorzata Czerwonka (self-written) for a **non-existing company**, and for **educational purposes only**. Inspiration to create informative and consistent content was borrowed from following sources:
+The text content for this page was created by student Malgorzata Czerwonka (self-written) for a **non-existing company**, and for **educational purposes only**. Inspiration to create informative and consistent content was borrowed from the following sources:
 - [**The Bar Cabinet**](https://thebarcabinet.com/) - The International Bartenders Association Official Cocktail List
 - [**IBA**](https://iba-world.com/) - The International Bartenders Association Official Website
 - [**Wikipedia**](https://en.wikipedia.org/wiki/List_of_cocktails) - List of cocktails
@@ -363,18 +359,18 @@ All the images used in this site were picked from:
 - [**FAVPNG**](https://favpng.com/) - a database of free transparent PNG Images 
 
 > Code
-- Code inspiration for whole project borrowed from 'Task Manager' Walkthrough Mini Project CI 
+- Code inspiration for the whole project borrowed from 'Task Manager' Walkthrough Mini Project CI 
 - Credit - jQuery code snippet for each component/feature used during development borrowed from [**Materialize CSS Initialization**](https://materializecss.com/)
 - Credit - vanilla JavaScript code snippet for Materialize CSS Initialization for form validation borrowed from 'Task Manager' Walkthrough Mini Project CI 
 
 
 # 10. Acknowledgments
 
-- Inspiration for this project was the walkthrough mini project "Task Manager" created by CI
+- Inspiration for this project was the walkthrough mini-project "Task Manager" created by CI
 - I would like to thank: 
     - Code Institute tutors for creating inspiring content for the course and support during learning process,
     - Slack Community, students and leaders, for being available and helpful every single time when needed,
-    - Tim for tip and advice how to use URLs input in this project
+    - Tim for tip and advice on how to use URLs input in this project
     - Ed for constructive zoom session about how to approach MS3 and advice about returning categories
     - especially to Harry for discussing issues about database and planning project, as well help with solving small errors and general support
     - and last but not least my mentor Sandeep Aggarwal for his guidance, patience, and effort during the development process
