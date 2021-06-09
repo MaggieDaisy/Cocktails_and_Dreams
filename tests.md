@@ -1,15 +1,22 @@
 # Manual testing on features
 
-The first step of the testing process was to create the basic framework of this application and check if the attached links for navigation between sections work properly. Then the application was developed successively, section by section. During the development process, all the features were checked after they were included. Last proper manual testing included one more detailed checking if everything works as expected.
+The first step of the testing process was to create a repository with the basic framework of this application and check if the attached links for navigation between pages work properly. Then the application was deployed and developed successively, step by step and page by page. During the development process, all the features were checked after they were included. Last proper manual testing included one more detailed checking if everything works as expected.
 
 1. **Brand name link and Home link** - has been checked and confirmed that directs the user successfully to the Home page.
 2. **All links settled in the top navigation bar** - have been checked that allow the user to navigate between individual pages like Home, Cocktail Collection, Register, Log In, Add Dream Recipe, Profile, Log Out.
 3. **All links settled in the side navigation bar for mobile** - also have been checked that allow the user to navigate between individual pages.
 4. **Image Carousel at the Home Page** - has been checked that scrolls right and left direction properly and gives a user visual experience together with the experience of interaction. Users can see the theme of the page during navigation
 5. **Category dropdown selection at the Home Page** - has been checked that display properly cocktails category name and category description, and all elements are clickable and 
-6. **Button nested at the Home Page** - has been checked and ensured that directs the user short way from content to add new recipe, but first to Register Page or Log In Page. 
-
-7. **Social media icons settled in the footer** - has been checked and ensured that points the user to social media main pages and opens in a new tab.
+6. **Button nested at the Home Page** - has been checked and ensured that directs the user short way from content to Add Dream Recipe, or alternatively to Log In/Register Page. 
+7. **Search bar located at Cocktails Collection Page** - as been checked and ensured that returns results of searching in the database for ingredients and names, if any data were not found then return alert that no result.
+8. **Card Panels with recipes located at Cocktails Collection Page** - has been checked and ensured that returns all planned content like a picture, name, and active buttons for a recipe, as well as a backside with description and other fields described earlier. For logged in users also buttons for edit and delete recipe. 
+9. **Profile Page available for registered users** - has been checked and ensured that returns a welcoming message to the user and collection of recipes created by this user/author with all content and functionality. 
+10. **Add Dream Recipe Page available for registered users** - has been checked and ensured that displays input fields form ready to being filled up by a user. Clickable categories dropdown menu, and button for add recipe work as it should.  
+11. **Edit Dream Recipe Page available for registered users** - has been checked and ensured that displays pre-filled input fields form ready to be updated and edited by a user. Clickable categories dropdown menu, and button for edit recipe work as it should.
+12. **Log In Page** - has been checked and ensured that after inserting required data brings a user to the profile page.
+13. **Register Page** - has been checked and ensured that after inserting required data brings a user to the profile page.
+14. **Log Out** - has been checked and ensured that after clicking on the link takes out a user from the profile page.
+15. **Social media icons settled in the footer** - has been checked and ensured that points the user to social media main pages and opens in a new tab.
 
 # Validation 
 When the site developed closer to the final stage, the next test was to check eventually errors in a code validation.
@@ -18,6 +25,9 @@ When the site developed closer to the final stage, the next test was to check ev
 <img src="assets/docs/.jpg" style="margin: 0;">
 
 - **CSS** - passing code into The W3C CSS Validation Service - Jigsaw brought no errors.
+
+<img src="assets/docs/pictures/css_noe.jpg" style="margin: 0;">
+
 - **Java Script** - passing code to JSHint a static code analysis tool for JavaScript returned some metrics about missing "use strict" statement, despite this, the functionality of code worked for the application.
 
 <img src="assets/docs/pictures/JS_Hint.jpg" style="margin: 0;">

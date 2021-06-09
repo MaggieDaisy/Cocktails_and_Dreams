@@ -31,6 +31,7 @@ html {
     background-color: rgba(66, 251, 5);
 }
 
+/* -- Nav Bar --*/
 .nav-icon {
     padding-left: 15px;
     font-size: 2rem;
@@ -50,15 +51,15 @@ html {
     height: 35rem;
 }
 
-.card-image img{
-   height: 34rem;
+.card-image img {
+    height: 34rem;
 }
 
 .card-content {
     height: 9rem;
 }
 
-.card-button{
+.card-button {
     height: 7rem;
 }
 
@@ -83,9 +84,4 @@ html {
         padding-top: 15px;
         font-size: 2rem;
     }
-    
-}
-
-/*-- Media Query for medium size devices -- */
-@media only screen and (max-width: 900px) {
 }

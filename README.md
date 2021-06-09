@@ -326,12 +326,12 @@ to deploy the project to Heroku: Cloud Application Platform which first needs so
 - Navigate to the Settings tab
 - Under Config Vars, click Reveal Config Vars.
 - Fill up the fields for key: value pairs
-    - "IP" : "0.0.0.0"
-    - "PORT" : "5000"
-    - "MONGO_DBNAME" : "name of the database"
-    - "MONGO_URI" : "string accessed from MongoDB"
+    - `"IP" : "0.0.0.0" `
+    - ` "PORT" : "5000" `
+    - ` "MONGO_DBNAME" : "name of the database" `
+    - ` "MONGO_URI" : "string accessed from MongoDB" `
 From MongoDB, under Data Storage, click Clusters and then click Connect, after click Connect your application, while ready copy provided link, replace < password > with the own one for the database access page, and the database name with the collection/database you want to connect to.
-    - "SECRET_KEY" : "private secret key"  
+    - ` "SECRET_KEY" : "private secret key" ` 
 
 > Automatic Deployment:
 
@@ -343,7 +343,13 @@ From MongoDB, under Data Storage, click Clusters and then click Connect, after c
 
 > Deploying Locally
 
-Very important to notify is that project will not run locally without an env.py python file, which contains the following secret with their corresponding values: IP, PORT, MONGO_DBNAME, MONGO_URI, SECRET_KEY. For security reasons about fragile data information, these details are not included in the repository. To make a clone please follow the steps below:
+Very important to notify is that project will not run locally without an env.py python file, which contains the following secret with their corresponding values: 
+    - `"IP" : "0.0.0.0" `
+    - ` "PORT" : "5000" `
+    - ` "MONGO_DBNAME" : "name of the database" `
+    - ` "MONGO_URI" : "string accessed from MongoDB" `
+    - ` "SECRET_KEY" : "private secret key" `
+For security reasons about fragile data information, these details are not included in the repository. To make a clone please follow the steps below:
 - Log into GitHub and navigate to the Repositories tab.
 - Choose the desired repository and above the list of the files, click on the Code drop-down menu.
 - Copy the clone URL under the HTTPS tab.
