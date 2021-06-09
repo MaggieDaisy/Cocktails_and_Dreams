@@ -24,7 +24,9 @@ This project was created to demonstrate the acquisition of broader coding skills
 
 Cocktails & Dreams is a full-stack application that allows users to manage a dataset about this domain. The purpose of this app is to demonstrate basic cocktails classic recipes, add new dream recipes, and search for existing ones by name or ingredient. This app can benefit cocktails enthusiasts who like to experiment with mixing ingredients and professional bartenders who can provide officially approved pieces of information. The website offers the possibility to users to share their data with the community and benefit from having convenient access to the data provided by all the members. This website is designed in such a way that the user can check it at any time, on the phone on the road, or at home on the computer. The project may be expanded in the future with other, more detailed sections.
 
-<img src="assets/docs/..... add a mockup .... jpg" style="margin: 0;">
+
+<img src="assets/docs/pictures/amiresponsive.jpg" style="margin: 0;">
+
 
 # 2. UXD – User Experience Design
 
@@ -269,9 +271,9 @@ The final result of this project is a full-stack, front-end and back-en
 # 7. Version Control
 
 **Git** - free and open-source distributed **Version Control System** was used to show tracking all changes during the coding process. Commands used to approve and store files in the repository: 
-`Git add .`  - adds files/directories to the staging area to be committed
-`Git commit -m " "` - commits files/directories to the repository with specific message
-`Git push` - pushes all committed inserts into the GitHub repository
+- `Git add .`  - adds files/directories to the staging area to be committed
+- `Git commit -m " "` - commits files/directories to the repository with specific message
+- `Git push` - pushes all committed inserts into the GitHub repository
  
 
 # 8. Deployment
