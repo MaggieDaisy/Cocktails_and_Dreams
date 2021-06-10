@@ -6,7 +6,11 @@ The first step of the testing process was to create a repository with the basic 
 2. **All links settled in the top navigation bar** - have been checked that allow the user to navigate between individual pages like Home, Cocktail Collection, Register, Log In, Add Dream Recipe, Profile, Log Out.
 3. **All links settled in the side navigation bar for mobile** - also have been checked that allow the user to navigate between individual pages.
 4. **Image Carousel at the Home Page** - has been checked that scrolls right and left direction properly and gives a user visual experience together with the experience of interaction. Users can see the theme of the page during navigation
-5. **Category dropdown selection at the Home Page** - has been checked that display properly cocktails category name and category description, and all elements are clickable and 
+
+<img src="assets/docs/pictures/carousel.jpg" style="margin: 0;">
+
+5. **Category dropdown selection at the Home Page** - has been checked that display properly cocktails category name and category description, and all elements are clickable
+<img src="assets/docs/pictures/dropdown.jpg" style="margin: 0;">
 6. **Button nested at the Home Page** - has been checked and ensured that directs the user short way from content to Add Dream Recipe, or alternatively to Log In/Register Page. 
 7. **Search bar located at Cocktails Collection Page** - as been checked and ensured that returns results of searching in the database for ingredients and names, if any data were not found then return alert that no result.
 8. **Card Panels with recipes located at Cocktails Collection Page** - has been checked and ensured that returns all planned content like a picture, name, and active buttons for a recipe, as well as a backside with description and other fields described earlier. For logged in users also buttons for edit and delete recipe. 

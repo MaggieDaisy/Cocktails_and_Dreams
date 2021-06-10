@@ -280,7 +280,9 @@ The final result of this project is a full-stack, front-end and back-en
 <img src="assets/docs/pictures/html_error.jpg" style="margin: 0;">
 
 - Problems also appeared when I tried to load hero images and carousel images from the assets folder to the index.html template. Images did not display at all and were leaving an empty space. I found then a temporary solution for the development process and I provided Urls addresses of images for the source in the image tag, but later on, I found that some of them started to crush as well. I was trying to look for solutions and I found that images need to be served by using the jinja url_for function from a static folder. 
+
 `<img class="responsive-img" src="{{ url_for('static', filename='images/color_dac.jpg') }}" alt="Colorful image with retro neon light at the bar" />`
+
 After improving this solution and changing the method of providing pictures now they display properly. However, pictures provided for card panels are still served from input fields by using URLs address, it is common that addresses can dynamically change so the problems with displaying images in recipes can occur in time. 
 
 # 7. Version Control
