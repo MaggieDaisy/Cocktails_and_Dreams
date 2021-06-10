@@ -20,9 +20,10 @@ The first step of the testing process was to create a repository with the basic 
 
 # Validation of code
 When the site developed closer to the final stage, the next test was to check eventually errors in a code validation.
-- **HTML** - passing code into The W3C Markup Validation Service brought some warnings, 
+- **HTML** - passing code into The W3C Markup Validation Service brought some warnings that section does not contain header, but it does not cause any problems for the application. 
 
-<img src="assets/docs/.jpg" style="margin: 0;">
+<img src="assets/docs/pictures/HTML_warn.jpg" style="margin: 0;">
+<img src="assets/docs/pictures/HTML_section.jpg" style="margin: 0;">
 
 - **CSS** - passing code into The W3C CSS Validation Service - Jigsaw brought no errors.
 
@@ -41,6 +42,8 @@ When the site developed closer to the final stage, the next test was to check ev
 # Other tests on browsers and devices
 - **Google Chrome Developer Tools** - The further tests of the application were about to check responsiveness in all pages using devtools. Multiple tests on multiple desktop sizes confirmed that a structure works quite well on mobile devices as well as bigger desktop sizes. The tests were conducted mainly with the use of the Google Chrome browser. However, the research also covered other browsers such as Mozilla Firefox, Microsoft Edge, and Apple Safari. In general, after inspecting by use of the tools available in each browser, it was found that the application displays correctly and is responsive to different screen sizes. 
 
+<img src="assets/docs/pictures/resp_different_size.jpg" style="margin: 0;">
+
 | Browser | Device | Compatibility |
 | --- | --- | --- |
 | Google Chrome | HP Spectre 13 | no problems occurred |
@@ -48,8 +51,6 @@ When the site developed closer to the final stage, the next test was to check ev
 | Microsoft Edge | HP Spectre 13 | no problems occurred |
 | Apple Safari | iPad 5th gen | no problems occurred |
 
-
-<img src="assets/docs/.jpg" style="margin: 0;">
 
 - In addition, the test was performed live on devices such as Huawei P20, Samsung Galaxy S10, iPhone 11, iPad 9.7, HP Spectre 13, Asus Zenbook UX32A, iMac. The result was very good and shown that on all those screen devices website was responsive and displayed as expected.
 

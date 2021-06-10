@@ -217,6 +217,7 @@ Existing features on the site were created for making the User's Experience easy
 - Another one could be the ability to add comments for recipes or even create a sort of forum, where users can discuss the recipes, details, give feedback and participate in the life of the website being a part of the community. 
 - Going further after this thought would be a possibility to create a space for saving and exchanging recipes with another user
 - Later on, when the application will grow up would be necessary to add an administration page, which will allow controlling all of the input content added by users. For the current stage of the application, the admin can add, correct and delete content by using a database where all information is stored. 
+- Another feature to implement in the future is to provide a replacement photo for the card panels with recipes. Card panels contain input fields for the URL address which users need to fill during creating a recipe by inserting an image URL. For now, I left those fields as required to avoid empty spaces, but the concern is that if users do not want to provide a picture or the URL address in the future will not be valid, then a replacement solution needs to be found.
 
 
 # 4. Technologies and Resources used 
@@ -269,11 +270,18 @@ The final result of this project is a full-stack, front-end and back-en
 
 - One of the biggest barriers during creation was to make this application complies with principles of UX design. The first contact with Materialize framework did not make this process smooth but definitely brought a new bunch of skills. A solution to improve the overall impression and overcome appearing styling problems was to use the official documentation [**MaterializeCSS**](https://materializecss.com/) and some [**YouTube**](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gGrbtvASEZSlFEYBnPkmff) tutorials. 
 - During testing after design a Search Bar input where users can search for cocktail names and cocktail ingredients, I found that something was wrong with submitting the search button. It was working occasionally when clicked on the icon but not the button field itself. After several pushes I got an error message that the code is missing simple `type="submit"` for a button tag, this bug was fixed by simply adding this type to the correct place.
+
+<img src="assets/docs/pictures/pymongo_wrong_type.jpg" style="margin: 0;">
+
 - Another fragile point was to create a modal trigger for deletion recipe alert. I decided to use a modal code snippet from materialize and attach functionality by looping for _id of the recipe. The problems appeared on the profile page and recipes page. After searching on slack and in the code itself I found that the main problem was in nesting the jinja loop properly so that will search for the proper area which has to be triggered to return the result. It was fixed by nesting the code in the proper div tag. The second problem was to attach div id `<div id="{{ recipe._id }}" class="modal card black">` for the href in button tag, it was fixed by adding # in front of jinja template  like so `<a class="black-text modal-trigger" href="#{{ recipe._id }}">Delete <i class="fas fa-trash-alt"></i></a>`
 - For the safety purposes, I decided to create a Login Required Decorator to protect users profile. I used a code snippet from [**Flask palletsprojects**](https://flask.palletsprojects.com/en/1.1.x/patterns/viewdecorators/#login-required-decorator), however, the code was returning errors about user not being in session and did not seem to work for my solution. After implementing all required steps and searching for information this bug was fixed by changing this line in decorator `if g.user is None:` for this line `if not session.get("user", None):` for obligatory returning users not being in a current session til login page. 
-- Close to final testing HTML code validator returned error "The element a must not appear as a descendant of the button element.". That was simply fixed by removing button tag and styling a tag as a button.
+- Close to final testing HTML code validator returned an error "The element a must not appear as a descendant of the button element.". That was simply fixed by removing button tag and styling a tag as a button.
 
 <img src="assets/docs/pictures/html_error.jpg" style="margin: 0;">
+
+- Problems also appeared when I tried to load hero images and carousel images from the assets folder to the index.html template. Images did not display at all and were leaving an empty space. I found then a temporary solution for the development process and I provided Urls addresses of images for the source in the image tag, but later on, I found that some of them started to crush as well. I was trying to look for solutions and I found that images need to be served by using the jinja url_for function from a static folder. 
+`<img class="responsive-img" src="{{ url_for('static', filename='images/color_dac.jpg') }}" alt="Colorful image with retro neon light at the bar" />`
+After improving this solution and changing the method of providing pictures now they display properly. However, pictures provided for card panels are still served from input fields by using URLs address, it is common that addresses can dynamically change so the problems with displaying images in recipes can occur in time. 
 
 # 7. Version Control
 
