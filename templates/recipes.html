@@ -1,5 +1,4 @@
-{% extends "base.html" %} 
-{% block content %}
+{% extends "base.html" %} {% block content %}
 
 <!-- Header of the page-->
 <h4 class="pink accent-3 center-align">All Dream Recipes</h4>
@@ -15,13 +14,9 @@
                 </div>
                 <div class="col s12 m4">
                     <!-- Button for reset data-->
-                    <button class="btn pink accent-3 waves-effect waves-light">
-                        <a class="black-text" href="{{ url_for('get_recipes') }}">Reset <i class="fas fa-retweet left"></i></a>
-                    </button>
+                    <a class="black-text btn pink accent-3 waves-effect waves-light" href="{{ url_for('get_recipes') }}">Reset <i class="fas fa-retweet left"></i></a>
                     <!-- Button for fetch data-->
-                    <button type="submit" class="btn indigo accent-3 waves-effect waves-light">
-                        <a class="black-text">Search <i class="fas fa-search right"></i></a>
-                    </button>
+                    <button type="submit" class="btn indigo accent-3 waves-effect waves-light black-text">Search <i class="fas fa-search right"></i></button>
                 </div>
             </div>
         </form>

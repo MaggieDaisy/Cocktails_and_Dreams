@@ -10,6 +10,7 @@ The first step of the testing process was to create a repository with the basic 
 <img src="assets/docs/pictures/carousel.jpg" style="margin: 0;">
 
 5. **Category dropdown selection at the Home Page** - has been checked that display properly cocktails category name and category description, and all elements are clickable
+
 <img src="assets/docs/pictures/dropdown.jpg" style="margin: 0;">
 
 6. **Button nested at the Home Page** - has been checked and ensured that directs the user short way from content to Add Dream Recipe, or alternatively to Log In/Register Page. 
