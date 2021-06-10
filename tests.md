@@ -11,6 +11,7 @@ The first step of the testing process was to create a repository with the basic 
 
 5. **Category dropdown selection at the Home Page** - has been checked that display properly cocktails category name and category description, and all elements are clickable
 <img src="assets/docs/pictures/dropdown.jpg" style="margin: 0;">
+
 6. **Button nested at the Home Page** - has been checked and ensured that directs the user short way from content to Add Dream Recipe, or alternatively to Log In/Register Page. 
 7. **Search bar located at Cocktails Collection Page** - as been checked and ensured that returns results of searching in the database for ingredients and names, if any data were not found then return alert that no result.
 8. **Card Panels with recipes located at Cocktails Collection Page** - has been checked and ensured that returns all planned content like a picture, name, and active buttons for a recipe, as well as a backside with description and other fields described earlier. For logged in users also buttons for edit and delete recipe. 
