@@ -78,15 +78,15 @@ Current and further developing and designing skill ability, the website provides
 The structure of the application is based on meeting the first needs of the potential user. The website is simple structured, learnable, and intuitive, the first interaction enables the quick and easy finding of information and orientation between features and theme. The text content is short and consistent and the imagery is simple and clean, both describe the purpose and aim very well. All sections allow the user to interact with the site using built-in functions.
 
 All users of the website should be able to see the navigation bar, with clickable options, clear and modern content, and a footer with SM icons. The visual impression and design should be also consistent across all pages of the app.
-- Navigation Bar on the top of the page which is consistent  - contains names of each site page for browsing easily between them, site logo which acts as a link to the main page, toggle button visible on smaller devices, and icon matching the theme
-- Home Page - contains a short introduction, small carousel gallery, dropdown menu with cocktails categories, and hero images for a better presentation of the aim of the site
-- Cocktails Collection Page - contains card panels with the presentation of 9 basic cocktails and 'Show Recipe' button which is clickable for the further view of full recipe description, search bar with the ability to search for the name of cocktail or ingredient
-- Register Page - contains two fields to fill up with 'Username' and 'Password' and a 'Register' button, and a link to the 'Log In' Page
-- Log In Page - contains two fields to fill up with 'Username' and 'Password' and a 'Login' button, and a link to the Register Page
-- Add Dream Recipe Page - contains a form available to fill out with the cocktail recipe fields like 'Category', 'Name', 'Description', 'Ingredients', 'Steps' 'Tools', 'Picture' and 'Submit' button, this page is available only for registered users
-- Profile Page - contains information about user and history uploaded recipes, this page is available for registered users, the dream recipe uploaded by the user contains a button for 'Edit' and 'Delete' the recipe
-- Log Out link - allows user to log out from the profile to protect a data
-- Footer on the bottom of the page which is also consistent - contains icons that act as a link to SM platforms
+- **Navigation Bar** on the top of the page which is consistent  - contains names of each site page for browsing easily between them, site logo which acts as a link to the main page, toggle button visible on smaller devices, and icon matching the theme
+- **Home Page** - contains a short introduction, small carousel gallery, dropdown menu with cocktails categories, and hero images for a better presentation of the aim of the site
+- **Cocktails Collection** Page - contains card panels with the presentation of 9 basic cocktails and 'Show Recipe' button which is clickable for the further view of full recipe description, search bar with the ability to search for the name of cocktail or ingredient
+- **Register Page** - contains two fields to fill up with 'Username' and 'Password' and a 'Register' button, and a link to the 'Log In' Page
+- **Log In** Page - contains two fields to fill up with 'Username' and 'Password' and a 'Login' button, and a link to the Register Page
+- **Add Dream Recipe** Page - contains a form available to fill out with the cocktail recipe fields like 'Category', 'Name', 'Description', 'Ingredients', 'Steps' 'Tools', 'Picture' and 'Submit' button, this page is available only for registered users
+- **Profile** Page - contains information about user and history uploaded recipes, this page is available for registered users, the dream recipe uploaded by the user contains a button for 'Edit' and 'Delete' the recipe
+- **Log Out** link - allows user to log out from the profile to protect a data
+- **Footer** on the bottom of the page which is also consistent - contains icons that act as a link to SM platforms
 
 
 
@@ -142,6 +142,9 @@ The selection of images for the carousel and card panels with recipes has been m
 Hero images on the Home Page reflect colorful neon lights that bring atmosphere from the cocktail bar.
 Imagery collections were picked from Unsplash and Pexels.
 
+> General Design
+
+During the development process, design changes had to be taken. I wanted to create a strong, visible, and colorful impression for the users. I have decided on a mix of colors and shades and line them from 3 different pallets. It was a purpose to match those colors to create a happy, party atmosphere typical for old-school neon bars. At the first stage, all of the headers and important and active points of the application had yellow/green flashy shadow text color. After few days I have decided to change that because it could cause some dizziness and not a user-friendly experience. The home page was rebuilt several times until met my expectation in a compromising way. There is a lot to improve later in the future.
 
 
 # 3. Features
@@ -276,10 +279,11 @@ The final result of this project is a full-stack, front-end and back-en
 
 # 6. Project barriers and solutions
 
-- materialize framework styling web
-- loop for delete alert
-- login required decorator
-
+- One of the biggest barriers during creation was to make this application complies with principles of UX design. The first contact with Materialize framework did not make this process smooth but definitely brought a new bunch of skills. A solution to improve the overall impression and overcome appearing styling problems was to use the official documentation [**MaterializeCSS**](https://materializecss.com/) and some [**YouTube**](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gGrbtvASEZSlFEYBnPkmff) tutorials. 
+- During testing after design a Search Bar input where users can search for cocktail names and cocktail ingredients, I found that something was wrong with submitting the search button. It was working occasionally when clicked on the icon but not the button field itself. After several pushes I got an error message that the code is missing simple `type="submit"` for a button tag, this bug was fixed by simply adding this type to the correct place.
+- Another fragile point was to create a modal trigger for deletion recipe alert. I decided to use a modal code snippet from materialize and attach functionality by looping for _id of the recipe. The problems appeared on the profile page and recipes page. After searching on slack and in the code itself I found that the main problem was in nesting the jinja loop properly so that will search for the proper area which has to be triggered to return the result. It was fixed by nesting the code in the proper div tag. The second problem was to attach div id `<div id="{{ recipe._id }}" class="modal card black">` for the href in button tag, it was fixed by adding # in front of jinja template  like so `<a class="black-text modal-trigger" href="#{{ recipe._id }}">Delete <i class="fas fa-trash-alt"></i></a>`
+- For the safety purposes, I decided to create a Login Required Decorator to protect users profile. I used a code snippet from Flask palletsprojects, however, the code was returning errors about user not being in session and did not seem to work for my solution. After implementing all required steps and searching for information this bug was fixed by changing this line in decorator `if g.user is None:` for this line `if not session.get("user", None):` for obligatory returning users not being in a current session til login page. 
+- Code HTML validation returned error "The element a must not appear as a descendant of the button element." 
 
 # 7. Version Control
 
@@ -344,11 +348,11 @@ From MongoDB, under Data Storage, click Clusters and then click Connect, after c
 > Deploying Locally
 
 Very important to notify is that project will not run locally without an env.py python file, which contains the following secret with their corresponding values: 
-    - `"IP" : "0.0.0.0" `
-    - ` "PORT" : "5000" `
-    - ` "MONGO_DBNAME" : "name of the database" `
-    - ` "MONGO_URI" : "string accessed from MongoDB" `
-    - ` "SECRET_KEY" : "private secret key" `
+- `"IP" : "0.0.0.0" `
+- ` "PORT" : "5000" `
+- ` "MONGO_DBNAME" : "name of the database" `
+- ` "MONGO_URI" : "string accessed from MongoDB" `
+- ` "SECRET_KEY" : "private secret key" `
 For security reasons about fragile data information, these details are not included in the repository. To make a clone please follow the steps below:
 - Log into GitHub and navigate to the Repositories tab.
 - Choose the desired repository and above the list of the files, click on the Code drop-down menu.
