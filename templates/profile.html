@@ -34,13 +34,9 @@
             <hr class="black" />
             <div class="center-align card-button">
                 <!-- Button for editing and correcting the content of recipe -->
-                <button class="btn-small indigo accent-3 waves-effect waves-light">
-                    <a class="black-text" href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">Edit <i class="fas fa-edit right"></i></a>
-                </button>
+                <a class="btn-small indigo accent-3 waves-effect waves-light black-text" href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">Edit <i class="fas fa-edit right"></i></a>
                 <!-- Button for deleting recipe -->
-                <button class="btn-small pink accent-3 waves-effect waves-light modal-trigger" data-target="modal">
-                    <a class="black-text modal-trigger" href="#{{ recipe._id }}">Delete <i class="fas fa-trash-alt"></i></a>
-                </button>
+                <a class="btn-small pink accent-3 waves-effect waves-light black-text modal-trigger" href="#{{ recipe._id }}">Delete <i class="fas fa-trash-alt"></i></a>
             </div>
             <!-- Card panel for displaying content fetched from data base -->
             <div class="card-reveal indigo lighten-5">
