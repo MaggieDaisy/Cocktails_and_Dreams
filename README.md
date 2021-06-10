@@ -113,6 +113,8 @@ A database MongoDB consists of 3 collections called:
 - recipes
 - users
 
+<img src="assets/docs/database/mongo_db.jpg" style="margin: 0;">
+
 
 ### **Surface**
 The visual experience of this project reflects the theme of colorful cocktails, retro and flashy neon design
@@ -268,7 +270,7 @@ The final result of this project is a full-stack, front-end and back-en
 - One of the biggest barriers during creation was to make this application complies with principles of UX design. The first contact with Materialize framework did not make this process smooth but definitely brought a new bunch of skills. A solution to improve the overall impression and overcome appearing styling problems was to use the official documentation [**MaterializeCSS**](https://materializecss.com/) and some [**YouTube**](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gGrbtvASEZSlFEYBnPkmff) tutorials. 
 - During testing after design a Search Bar input where users can search for cocktail names and cocktail ingredients, I found that something was wrong with submitting the search button. It was working occasionally when clicked on the icon but not the button field itself. After several pushes I got an error message that the code is missing simple `type="submit"` for a button tag, this bug was fixed by simply adding this type to the correct place.
 - Another fragile point was to create a modal trigger for deletion recipe alert. I decided to use a modal code snippet from materialize and attach functionality by looping for _id of the recipe. The problems appeared on the profile page and recipes page. After searching on slack and in the code itself I found that the main problem was in nesting the jinja loop properly so that will search for the proper area which has to be triggered to return the result. It was fixed by nesting the code in the proper div tag. The second problem was to attach div id `<div id="{{ recipe._id }}" class="modal card black">` for the href in button tag, it was fixed by adding # in front of jinja template  like so `<a class="black-text modal-trigger" href="#{{ recipe._id }}">Delete <i class="fas fa-trash-alt"></i></a>`
-- For the safety purposes, I decided to create a Login Required Decorator to protect users profile. I used a code snippet from Flask palletsprojects, however, the code was returning errors about user not being in session and did not seem to work for my solution. After implementing all required steps and searching for information this bug was fixed by changing this line in decorator `if g.user is None:` for this line `if not session.get("user", None):` for obligatory returning users not being in a current session til login page. 
+- For the safety purposes, I decided to create a Login Required Decorator to protect users profile. I used a code snippet from [**Flask palletsprojects**](https://flask.palletsprojects.com/en/1.1.x/patterns/viewdecorators/#login-required-decorator), however, the code was returning errors about user not being in session and did not seem to work for my solution. After implementing all required steps and searching for information this bug was fixed by changing this line in decorator `if g.user is None:` for this line `if not session.get("user", None):` for obligatory returning users not being in a current session til login page. 
 - Code HTML validation returned error "The element a must not appear as a descendant of the button element." 
 
 # 7. Version Control
@@ -372,7 +374,8 @@ All the images used in this site were picked from:
 > Code
 - Code inspiration for the whole project borrowed from 'Task Manager' Walkthrough Mini Project CI 
 - Credit - jQuery code snippet for each component/feature used during development borrowed from [**Materialize CSS Initialization**](https://materializecss.com/)
-- Credit - vanilla JavaScript code snippet for Materialize CSS Initialization for form validation borrowed from 'Task Manager' Walkthrough Mini Project CI 
+- Credit - vanilla JavaScript code snippet for Materialize CSS Initialization for form validation borrowed from 'Task Manager' Walkthrough Mini Project CI
+- Credit - code snippet from [**Flask**](https://flask.palletsprojects.com/en/1.1.x/patterns/viewdecorators/#login-required-decorator) to create login required decorator
 
 
 # 10. Acknowledgments
