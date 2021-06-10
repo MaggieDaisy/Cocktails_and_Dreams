@@ -260,21 +260,7 @@ Existing features on the site were created for making the User's Experience easy
 The final result of this project is a full-stack, front-end and back-end web application based on the principles of user experience design, accessibility, and functionality. 
 **This is an interactive front-end and back-end web application developed and implemented by using HTML, CSS, JavaScript, Python+Flask, MongoDB with additional Materialize and jQuery elements**, so required testing was conducted based on functionality for getting and storing data, visual effects, website layout, and interactive actions which user can take it during navigation.
 
-**General manual and further testing results:** ---> please click [here](tests.md)
-
-> Answering to a user story needs: 
-
-- Tests made on the top located navigation bar shown that every person visiting the site will be able to navigate very easily between sections to find pieces of information. Clickable links are bringing the user to different pages. The navigation bar with active links is available all the time on top of the page, so it is easy to switch and back to desirable content.
-- Tests made on the separate pages shown that users will be able to learn about the application very fast. The 'Home' - landing page contains very intuitive information and shows the purpose of the website.
-- Tests made on the 'Register' page shown that all process is very easy and quick and does not require a lot of data to have access to the full content of the application. Profile account can be created in 3 steps, by entering Username, Password, and click on submit button. 
-- Test made on The 'Cocktails Collection' page which presents card panels with separate recipes is very clear and meets the users expectation. Each card panel contains clickable buttons, a picture of the cocktail, name, description, ingredients, tools, and steps. 
-- Tests made on footers social media icons allows user to find visible and easy access to social media. Clickable links are giving the user possibility to observe and join the community of bartenders.
-- Tests made on different screen sizes show that the application is responsive, so the user can look at the page on different devices.
-- Tests made on the 'Log In' page has shown that existing user has very simple access to the full content of the page.  Similar to registration, logging in takes only 3 steps, so makes access very smooth and fast. 
-- Tests made on the 'Add Dream Recipe' page shown that users have a great possibility to create and add their own recipes. The page contains a simple form with intuitive icons and input fields, everything is presented clearly so the users can be creative and share ideas not using much time on it. 
-- Tests made on the 'Edit' recipe page confirm that registered and logged-in users can easily navigate between their dream recipes.  Authors can edit a recipe, correct the content or category or picture, or just delete it from the collection. 
-- Tests made on the 'Profile' page shown that authors of recipes can easily see their own collection of recipes stored in one place. 
-- Tests made on the 'Log Out' link confirm that the user can very quickly leave the profile site by clicking on the navbar link. 
+**General manual and further testing results, like user stories, CRUD, code validation :** ---> please click [**HERE**](tests.md)
 
 
 # 6. Project barriers and solutions

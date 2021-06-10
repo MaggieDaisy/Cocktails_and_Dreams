@@ -18,7 +18,7 @@ The first step of the testing process was to create a repository with the basic 
 14. **Log Out** - has been checked and ensured that after clicking on the link takes out a user from the profile page.
 15. **Social media icons settled in the footer** - has been checked and ensured that points the user to social media main pages and opens in a new tab.
 
-# Validation 
+# Validation of code
 When the site developed closer to the final stage, the next test was to check eventually errors in a code validation.
 - **HTML** - passing code into The W3C Markup Validation Service brought some warnings, 
 
@@ -38,7 +38,7 @@ When the site developed closer to the final stage, the next test was to check ev
 
 <img src="assets/docs/pictures/env_import.jpg" style="margin: 0;">
 
-# Other Tests
+# Other tests on browsers and devices
 - **Google Chrome Developer Tools** - The further tests of the application were about to check responsiveness in all pages using devtools. Multiple tests on multiple desktop sizes confirmed that a structure works quite well on mobile devices as well as bigger desktop sizes. The tests were conducted mainly with the use of the Google Chrome browser. However, the research also covered other browsers such as Mozilla Firefox, Microsoft Edge, and Apple Safari. In general, after inspecting by use of the tools available in each browser, it was found that the application displays correctly and is responsive to different screen sizes. 
 
 | Browser | Device | Compatibility |
@@ -62,4 +62,82 @@ When the site developed closer to the final stage, the next test was to check ev
 <img src="assets/docs/pictures/Mobile_friend.jpg" style="margin: 0;">
 
 - **Grammarly** - Final tests were about to check grammar and spelling throughout the whole site and Readme file, page by page text was run through Grammarly application and showed several errors to correct.
+
+# User stories 
+> Answering to a user story needs: 
+
+- Tests made on the top located navigation bar shown that every person visiting the site will be able to navigate very easily between sections to find pieces of information. Clickable links are bringing the user to different pages. The navigation bar with active links is available all the time on top of the page, so it is easy to switch and back to desirable content.
+- Tests made on the separate pages shown that users will be able to learn about the application very fast. The 'Home' - landing page contains very intuitive information and shows the purpose of the website.
+- Tests made on the 'Register' page shown that all process is very easy and quick and does not require a lot of data to have access to the full content of the application. Profile account can be created in 3 steps, by entering Username, Password, and click on submit button. 
+- Test made on The 'Cocktails Collection' page which presents card panels with separate recipes is very clear and meets the users expectation. Each card panel contains clickable buttons, a picture of the cocktail, name, description, ingredients, tools, and steps. 
+- Tests made on footers social media icons allows user to find visible and easy access to social media. Clickable links are giving the user possibility to observe and join the community of bartenders.
+- Tests made on different screen sizes show that the application is responsive, so the user can look at the page on different devices.
+- Tests made on the 'Log In' page has shown that existing user has very simple access to the full content of the page.  Similar to registration, logging in takes only 3 steps, so makes access very smooth and fast. 
+- Tests made on the 'Add Dream Recipe' page shown that users have a great possibility to create and add their own recipes. The page contains a simple form with intuitive icons and input fields, everything is presented clearly so the users can be creative and share ideas not using much time on it. 
+- Tests made on the 'Edit' recipe page confirm that registered and logged-in users can easily navigate between their dream recipes.  Authors can edit a recipe, correct the content or category or picture, or just delete it from the collection. 
+- Tests made on the 'Profile' page shown that authors of recipes can easily see their own collection of recipes stored in one place. 
+- Tests made on the 'Log Out' link confirm that the user can very quickly leave the profile site by clicking on the navbar link. 
+
+# CRUD 
+
+One of the most important part of testing on this application was to ensure that registered user can Create, Read, Update and Delete cocktail recipes. So to check that all functionality works as it was planned I created a test user account. 
+
+<img src="assets/docs/pictures/crud/register.jpg" style="margin: 0;">
+
+
+The registration process by entering Userneme and Password required went very easy and smooth and returned a flash message about a successfully created Profile page. 
+
+<img src="assets/docs/pictures/crud/alert_regok.jpg" style="margin: 0;">
+
+
+Once the profile exists user gets full access to the content of the page and the possibility to create new recipes. So next step was to check if 'Add Dream Recipe' page works properly, I head over to fill the provided form.
+
+<img src="assets/docs/pictures/crud/fill_form.jpg" style="margin: 0;">
+
+After clicking on Add Recipe/Submit button, the recipe was successfully added to the collection and returned to the page where all recipes are stored.
+
+<img src="assets/docs/pictures/crud/add_alertok.jpg" style="margin: 0;">
+
+I made sure that the card panel with a new recipe appeared on the page with all collections and on the users profile site. 
+
+<img src="assets/docs/pictures/crud/profile_coll.jpg" style="margin: 0;">
+
+
+Then I checked if the card panel displays all planned features front and back, like picture, name, show recipe, close, description, steps, tools, as well as edit and delete buttons.
+
+<img src="assets/docs/pictures/crud/card_panel.jpg" style="margin: 0;">
+
+After everything was looking good I tested the edit button for a recipe, after clicking on it I was returned to a pre-filled form with the recipe already created. I changed one line with content and I clicked on the edit recipe button, this brought me to the recipe collection page and returned a flash message that my recipe was successfully updated.  
+
+<img src="assets/docs/pictures/crud/edit_form.jpg" style="margin: 0;">
+
+<img src="assets/docs/pictures/crud/edit_alertok.jpg" style="margin: 0;">
+
+Then I tested out the search bar provided, I entered one of the ingredients of a recipe I wanted to contain, it was the word strawberry which successfully returned cocktail called Strawberry Daiquiri. I made sure that I can see and read other users recipes, browse between them, and search for them by entering cocktail names or ingredients. 
+
+<img src="assets/docs/pictures/crud/search_bar.jpg" style="margin: 0;">
+
+Then I returned back to the test user profile page and I checked if I can delete my recipe. I tested out the button which returned an alert asking if I am sure about the deletion of this recipe. I clicked delete and I received an alert that my recipe was deleted from the collection. I checked the page with recipes if this specific one was gone, and it was. 
+
+<img src="assets/docs/pictures/crud/delete.jpg" style="margin: 0;">
+
+<img src="assets/docs/pictures/crud/alert_deleteok.jpg" style="margin: 0;">
+
+
+The last step was to check if the user can safely leave the page, I tested the log-out link provided in the navbar. After clicking on that I received a message that I have been logged out and other users do not have access to my creations. 
+
+<img src="assets/docs/pictures/crud/logout_ok.jpg" style="margin: 0;">
+
+
+The above tests confirm that the application fulfills its task and registered and logged-in users can read, create, edit and delete recipes. 
+
+
+
+
+
+
+
+
+
+
 
