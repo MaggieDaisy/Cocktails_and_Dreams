@@ -80,56 +80,56 @@ When the site developed closer to the final stage, the next test was to check ev
 
 # CRUD 
 
-One of the most important part of testing on this application was to ensure that registered user can Create, Read, Update and Delete cocktail recipes. So to check that all functionality works as it was planned I created a test user account. 
+- One of the most important part of testing on this application was to ensure that registered user can **Create, Read, Update and Delete** cocktail recipes. So to check that all functionality works as it was planned I created a test user account. 
 
 <img src="assets/docs/pictures/crud/register.jpg" style="margin: 0;">
 
 
-The registration process by entering Userneme and Password required went very easy and smooth and returned a flash message about a successfully created Profile page. 
+- The **registration** process by entering Userneme and Password required went very easy and smooth and returned a flash message about a successfully created **Profile** page. 
 
 <img src="assets/docs/pictures/crud/alert_regok.jpg" style="margin: 0;">
 
 
-Once the profile exists user gets full access to the content of the page and the possibility to create new recipes. So next step was to check if 'Add Dream Recipe' page works properly, I head over to fill the provided form.
+- Once the profile exists user gets full access to the content of the page and the possibility to create new recipes. So next step was to check if **'Add Dream Recipe'** page works properly, I head over to fill the provided form.
 
 <img src="assets/docs/pictures/crud/fill_form.jpg" style="margin: 0;">
 
-After clicking on Add Recipe/Submit button, the recipe was successfully added to the collection and returned to the page where all recipes are stored.
+- After clicking on Add Recipe/Submit **button, the recipe was successfully added** to the collection and returned to the page where all recipes are stored.
 
 <img src="assets/docs/pictures/crud/add_alertok.jpg" style="margin: 0;">
 
-I made sure that the card panel with a new recipe appeared on the page with all collections and on the users profile site. 
+- I made sure that the **card panel with a new recipe** appeared on the page with all collections and on the users profile site. 
 
 <img src="assets/docs/pictures/crud/profile_coll.jpg" style="margin: 0;">
 
 
-Then I checked if the card panel displays all planned features front and back, like picture, name, show recipe, close, description, steps, tools, as well as edit and delete buttons.
+- Then I checked if the **card panel displays all planned features** in front and back, like picture, name, show recipe, close, description, steps, tools, as well as edit and delete buttons.
 
 <img src="assets/docs/pictures/crud/card_panel.jpg" style="margin: 0;">
 
-After everything was looking good I tested the edit button for a recipe, after clicking on it I was returned to a pre-filled form with the recipe already created. I changed one line with content and I clicked on the edit recipe button, this brought me to the recipe collection page and returned a flash message that my recipe was successfully updated.  
+_ After everything was looking good I tested the **edit button for a recipe**, after clicking on it I was returned to a **pre-filled form** with the recipe already created. I changed one line with content and I clicked on the edit recipe button, this brought me to the recipe collection page and returned a flash message that my recipe was successfully updated.  
 
 <img src="assets/docs/pictures/crud/edit_form.jpg" style="margin: 0;">
 
 <img src="assets/docs/pictures/crud/edit_alertok.jpg" style="margin: 0;">
 
-Then I tested out the search bar provided, I entered one of the ingredients of a recipe I wanted to contain, it was the word strawberry which successfully returned cocktail called Strawberry Daiquiri. I made sure that I can see and read other users recipes, browse between them, and search for them by entering cocktail names or ingredients. 
+- Then I tested out the **search bar** provided, I entered one of the ingredients of a recipe I wanted to contain, it was the word strawberry which successfully returned cocktail called Strawberry Daiquiri. I made sure that I can see and read other users recipes, browse between them, and search for them by **entering cocktail names or ingredients**. 
 
 <img src="assets/docs/pictures/crud/search_bar.jpg" style="margin: 0;">
 
-Then I returned back to the test user profile page and I checked if I can delete my recipe. I tested out the button which returned an alert asking if I am sure about the deletion of this recipe. I clicked delete and I received an alert that my recipe was deleted from the collection. I checked the page with recipes if this specific one was gone, and it was. 
+- Then I returned back to the test user profile page and I checked if I can **delete my recipe**. I tested out the button which returned an **alert asking** if I am sure about the deletion of this recipe. I clicked delete and I received an alert that my recipe was deleted from the collection. I checked the page with recipes if this specific one was gone, and it was. 
 
 <img src="assets/docs/pictures/crud/delete.jpg" style="margin: 0;">
 
 <img src="assets/docs/pictures/crud/alert_deleteok.jpg" style="margin: 0;">
 
 
-The last step was to check if the user can safely leave the page, I tested the log-out link provided in the navbar. After clicking on that I received a message that I have been logged out and other users do not have access to my creations. 
+- The last step was to check if the user can safely leave the page, I tested the log-out link provided in the navbar. After clicking on that I received a message that I have been **logged out** and other users do not have access to my creations. 
 
 <img src="assets/docs/pictures/crud/logout_ok.jpg" style="margin: 0;">
 
 
-The above tests confirm that the application fulfills its task and registered and logged-in users can read, create, edit and delete recipes. 
+**The above tests confirm that the application fulfills its task and registered and logged-in users can read, create, edit and delete recipes.**
 
 
 
