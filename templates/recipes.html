@@ -33,10 +33,10 @@
     {% for recipe in recipes %}
     <div class="col s12 m6 l4">
         <!-- Card panel to display recipe with elements-->
-        <div id="card-recipe" class="card-panel card pink lighten-5">
+        <div class="card-panel card pink lighten-5 card-recipe">
             <!-- Card image for cocktail -->
             <div class="card-image">
-                <img class="activator responsive-img" src="{{ recipe.recipe_picture }}" />
+                <img class="activator responsive-img" src="{{ recipe.recipe_picture }}" alt="Example of cocktail picture"/>
             </div>
             <!-- Card content with cocktail category, and active link for name and icon -->
             <div class="card-content">

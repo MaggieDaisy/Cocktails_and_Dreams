@@ -23,9 +23,9 @@
     <!-- Displays Card Panels only created by User being in current session-->
     {% if session.user|lower == recipe.created_by|lower %}
     <div class="col s12 m6 l4">
-        <div id="card-recipe" class="card-panel card pink lighten-5">
+        <div class="card-panel card pink lighten-5 card-recipe">
             <div class="card-image">
-                <img class="activator responsive-img" src="{{ recipe.recipe_picture }}" />
+                <img class="activator responsive-img" src="{{ recipe.recipe_picture }}" alt="Examlpe of cocktail picture"/>
             </div>
             <div class="card-content">
                 <span><i class="fas fa-glass-whiskey text-shadow left"></i> {{ recipe.category_name }} </span>

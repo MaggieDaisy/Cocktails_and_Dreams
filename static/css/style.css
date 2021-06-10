@@ -43,7 +43,7 @@ html {
 }
 
 /*-- Recipes and Profile page -- */
-#card-recipe {
+.card-recipe {
     height: 52rem;
 }
 
