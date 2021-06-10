@@ -13,13 +13,11 @@
                 <i class="fas fa-hand-pointer prefix text-shadow"></i>
                 <select id="category_name" name="category_name" class="validate" required>
                     <option value="{{ recipe.category_name }}" disabled>Choose Cocktail Category</option>
-                    {% for category in categories %} 
-                    {% if category.category_name == recipe.category_name %}
+                    {% for category in categories %} {% if category.category_name == recipe.category_name %}
                     <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
                     {% else %}
                     <option value="{{ category.category_name }}">{{ category.category_name }}</option>
-                    {% endif %} 
-                    {% endfor %}
+                    {% endif %} {% endfor %}
                 </select>
                 <label for="category_name"></label>
             </div>
