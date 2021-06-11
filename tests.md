@@ -32,7 +32,7 @@ The first step of the testing process was to create a repository with the basic 
 
 # Validation of code
 When the site developed closer to the final stage, the next test was to check eventually errors in a code validation.
-- **HTML** - passing code into The W3C Markup Validation Service brought some warnings that section does not contain header, but it does not cause any problems for the application. 
+- **HTML** - passing code into The W3C Markup Validation Service brought some warnings that section does not contain header, but section contains div and inside div is nested header, this warning does not cause any problems for the application. 
 
 <img src="assets/docs/pictures/HTML_warn.jpg" style="margin: 0;">
 <img src="assets/docs/pictures/HTML_section.jpg" style="margin: 0;">
@@ -147,6 +147,8 @@ When the site developed closer to the final stage, the next test was to check ev
 **The above tests confirm that the application fulfills its task and registered and logged-in users can read, create, edit and delete recipes.**
 
 # Debug mode
+
+During the development process debug mode was turned as "on", after a production version of the application needs to be changed for the development version debug mode was turned as "off". 
 
 
 
