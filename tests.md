@@ -4,7 +4,10 @@ The first step of the testing process was to create a repository with the basic 
 
 1. **Brand name link and Home link** - has been checked and confirmed that directs the user successfully to the Home page.
 2. **All links settled in the top navigation bar** - have been checked that allow the user to navigate between individual pages like Home, Cocktail Collection, Register, Log In, Add Dream Recipe, Profile, Log Out.
-3. **All links settled in the side navigation bar for mobile** - also have been checked that allow the user to navigate between individual pages.
+3. **All links settled in the side navigation bar for small and medium devices** - also have been checked that allow the user to navigate between individual pages.
+
+<img src="assets/docs/pictures/side_bar.jpg" style="margin: 0;">
+
 4. **Image Carousel at the Home Page** - has been checked that scrolls right and left direction properly and gives a user visual experience together with the experience of interaction. Users can see the theme of the page during navigation
 
 <img src="assets/docs/pictures/carousel.jpg" style="margin: 0;">
@@ -14,7 +17,10 @@ The first step of the testing process was to create a repository with the basic 
 <img src="assets/docs/pictures/dropdown.jpg" style="margin: 0;">
 
 6. **Button nested at the Home Page** - has been checked and ensured that directs the user short way from content to Add Dream Recipe, or alternatively to Log In/Register Page. 
-7. **Search bar located at Cocktails Collection Page** - as been checked and ensured that returns results of searching in the database for ingredients and names, if any data were not found then return alert that no result.
+7. **Search bar located at Cocktails Collection Page** - has been checked and ensured that returns results of searching in the database for ingredients and names, if any data were not found then return alert that no result.
+
+<img src="assets/docs/pictures/search_noresult.jpg" style="margin: 0;">
+
 8. **Card Panels with recipes located at Cocktails Collection Page** - has been checked and ensured that returns all planned content like a picture, name, and active buttons for a recipe, as well as a backside with description and other fields described earlier. For logged in users also buttons for edit and delete recipe. 
 9. **Profile Page available for registered users** - has been checked and ensured that returns a welcoming message to the user and collection of recipes created by this user/author with all content and functionality. 
 10. **Add Dream Recipe Page available for registered users** - has been checked and ensured that displays input fields form ready to being filled up by a user. Clickable categories dropdown menu, and button for add recipe work as it should.  
@@ -71,6 +77,7 @@ When the site developed closer to the final stage, the next test was to check ev
 - **Grammarly** - Final tests were about to check grammar and spelling throughout the whole site and Readme file, page by page text was run through Grammarly application and showed several errors to correct.
 
 # User stories 
+
 > Answering to a user story needs: 
 
 - Tests made on the top located navigation bar shown that every person visiting the site will be able to navigate very easily between sections to find pieces of information. Clickable links are bringing the user to different pages. The navigation bar with active links is available all the time on top of the page, so it is easy to switch and back to desirable content.
@@ -84,6 +91,7 @@ When the site developed closer to the final stage, the next test was to check ev
 - Tests made on the 'Edit' recipe page confirm that registered and logged-in users can easily navigate between their dream recipes.  Authors can edit a recipe, correct the content or category or picture, or just delete it from the collection. 
 - Tests made on the 'Profile' page shown that authors of recipes can easily see their own collection of recipes stored in one place. 
 - Tests made on the 'Log Out' link confirm that the user can very quickly leave the profile site by clicking on the navbar link. 
+    - *Please note that imagery examples that cover testing user stories can be found in the manual and crud testing section.
 
 # CRUD 
 
@@ -114,7 +122,7 @@ When the site developed closer to the final stage, the next test was to check ev
 
 <img src="assets/docs/pictures/crud/card_panel.jpg" style="margin: 0;">
 
-_ After everything was looking good I tested the **edit button for a recipe**, after clicking on it I was returned to a **pre-filled form** with the recipe already created. I changed one line with content and I clicked on the edit recipe button, this brought me to the recipe collection page and returned a flash message that my recipe was successfully updated.  
+- After everything was looking good I tested the **edit button for a recipe**, after clicking on it I was returned to a **pre-filled form** with the recipe already created. I changed one line with content and I clicked on the edit recipe button, this brought me to the recipe collection page and returned a flash message that my recipe was successfully updated.  
 
 <img src="assets/docs/pictures/crud/edit_form.jpg" style="margin: 0;">
 
@@ -137,6 +145,10 @@ _ After everything was looking good I tested the **edit button for a recipe**, a
 
 
 **The above tests confirm that the application fulfills its task and registered and logged-in users can read, create, edit and delete recipes.**
+
+# Debug mode
+
+
 
 
 
