@@ -12,12 +12,14 @@
                 <i class="fas fa-glass-whiskey text-shadow"></i>
                 <i class="fas fa-hand-pointer prefix text-shadow"></i>
                 <select id="category_name" name="category_name" class="validate" required>
-                    <option value="{{ recipe.category_name }}" disabled>Choose Cocktail Category</option>
-                    {% for category in categories %} {% if category.category_name == recipe.category_name %}
+                    <option value="" disabled>Choose Cocktail Category</option>
+                    {% for category in categories %} 
+                    {% if category.category_name == recipe.category_name %}
                     <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
                     {% else %}
                     <option value="{{ category.category_name }}">{{ category.category_name }}</option>
-                    {% endif %} {% endfor %}
+                    {% endif %} 
+                    {% endfor %}
                 </select>
                 <label for="category_name"></label>
             </div>
@@ -74,9 +76,7 @@
         <div class="row">
             <div class="col s12 center-align">
                 <!-- Button for canceling insert-->
-                <button class="btn-large pink accent-3 waves-effect waves-light">
-                    <a class="black-text" href="{{ url_for('get_recipes')}}">Cancel <i class="far fa-window-close"></i></a>
-                </button>
+                <a class="btn-large pink accent-3 waves-effect waves-light black-text" href="{{ url_for('get_recipes')}}">Cancel <i class="far fa-window-close"></i></a>
                 <!-- Button for accepting insert-->
                 <button type="submit" class="btn-large waves-effect waves-light indigo accent-3 black-text">Edit Recipe <i class="fas fa-edit right"></i></button>
             </div>

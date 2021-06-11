@@ -153,7 +153,7 @@ During the development process, design changes had to be taken. I wanted to crea
 
 > Existing Features
 
-Existing features on the site were created for making the User's Experience easy and intuitive. Application is clear to understand, as a first visible is the purpose of the website which is reading, creating, storing, and sharing recipes with others. Space created for users is very simple and comfortable, all features are clearly specified and pointing users to take further steps. The navigation bar and footer are consistent and act as a fixed component on every page which makes navigation smooth. Name of separate pages acts as active links and brings users to different parts of content and experiences. 
+Existing features on the site were created for making the User's Experience easy and intuitive. Application is clear to understand, as a first visible is the purpose of the website which is reading, creating, storing, and sharing recipes with others. Space created for users is very simple and comfortable, all features are clearly specified and pointing users to take further steps. The navigation bar and footer are consistent and act as a present component on every page which makes navigation smooth. Name of separate pages acts as active links and brings users to different parts of content and experiences. 
 
 - **Top Navigation Bar**
   - The fixed navigation bar located at the top of the page shows on all site pages on every size of the device. Navbar allows users to easily browsing through the site and making sure that users can enter every part of the application from this place. Navbar menu is responsive and on small size deices collapse to a button. 
@@ -256,12 +256,11 @@ Existing features on the site were created for making the User's Experience easy
 * [**Grammarly**](https://app.grammarly.com/) - a comprehensive writing tool was used as a helper to write clear and correct text.
 * **Microsoft Paint** - a simple raster graphics editor has been used for editing and resizing pictures.
 * [**FaviconeCodeGenerator**](https://www.faviconcodegenerator.com/) - Favicon Code Generator is Free Online Favicon Converter and has been used to create a little graphic image (icon) associated with a webpage.
-* [**MDN Web Docs**](https://developer.mozilla.org/) - a documentation repository and learning resource for web developers has been used as a general resource.
 
 # 5. Testing
 
 The final result of this project is a full-stack, front-end and back-end web application based on the principles of user experience design, accessibility, and functionality. 
-**This is an interactive front-end and back-end web application developed and implemented by using HTML, CSS, JavaScript, Python+Flask, MongoDB with additional Materialize and jQuery elements**, so required testing was conducted based on functionality for getting and storing data, visual effects, website layout, and interactive actions which user can take it during navigation.
+**This is an interactive front-end and back-end web application developed and implemented by using HTML, CSS, JavaScript, Python+Flask, MongoDB with additional Materialize and jQuery elements**, so required testing was conducted based on functionality for getting and storing data, visual effects, website layout, and interactive actions which user can take during navigation.
 
 **General manual and further testing results, like user stories, CRUD, code validation :** ---> please click [**HERE**](tests.md)
 
@@ -269,7 +268,7 @@ The final result of this project is a full-stack, front-end and back-en
 # 6. Project barriers and solutions
 
 - One of the biggest barriers during creation was to make this application complies with principles of UX design. The first contact with Materialize framework did not make this process smooth but definitely brought a new bunch of skills. A solution to improve the overall impression and overcome appearing styling problems was to use the official documentation [**MaterializeCSS**](https://materializecss.com/) and some [**YouTube**](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gGrbtvASEZSlFEYBnPkmff) tutorials. 
-- During testing after design a Search Bar input where users can search for cocktail names and cocktail ingredients, I found that something was wrong with submitting the search button. It was working occasionally when clicked on the icon but not the button field itself. After several pushes I got an error message that the code is missing simple `type="submit"` for a button tag, this bug was fixed by simply adding this type to the correct place.
+- During testing after design a Search Bar input where users can search for cocktail names and cocktail ingredients, I found that something was wrong with submitting the search button. It was working occasionally when clicked on the icon but not the button field itself. After several pushes I got an error message that the code is missing simple `type="submit"` for a button tag, this bug was fixed by adding this type to the correct place.
 
 <img src="assets/docs/pictures/pymongo_wrong_type.jpg" style="margin: 0;">
 
@@ -315,7 +314,7 @@ to deploy the project to Heroku: Cloud Application Platform which first needs so
 
 - Log in to Heroku
 - Click on the New button on the top right of the dashboard and select Create a new app.
-- Create a unique app name 
+- Create a unique app name named cocktails-and-dreams-m 
 - Choose the closest region and click Create app.
 
 
