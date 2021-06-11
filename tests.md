@@ -150,8 +150,7 @@ When the site developed closer to the final stage, the next test was to check ev
 
 During the development process debug mode was turned as "on", after a production version of the application needs to be changed for the development version debug mode was turned as "off". 
 
-
-
+<img src="assets/docs/pictures/debug_mode.jpg" style="margin: 0;">
 
 
 
